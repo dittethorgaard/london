@@ -14,6 +14,127 @@ body {
 }
 
 /* ----- Forside ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.london-bar {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+#london-header {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#london-bar-name {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+#london-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#london-nav ul li {
+  margin: 0 15px;
+}
+
+.london-nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.london-book-btn {
+  background-color: #66a160;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#london-welcome-section {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('images/welcome-bg.jpg'); /* Add a background image */
+  background-size: cover;
+  color: #fff;
+}
+
+#london-welcome-title {
+  font-size: 2em;
+}
+
+.london-buttons {
+  margin-top: 20px;
+}
+
+.london-button-item {
+  background-color: #66a160;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#london-about-section, #london-packages-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #2a2a2a; /* Dark background for sections */
+}
+
+#london-package-1 {
+  background-color: #3a3a3a; /* Slightly lighter for contrast */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#london-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#london-newsletter-form {
+  margin-top: 20px;
+}
+
+#london-newsletter {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#london-newsletter-form button {
+  background-color: #66a160;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 /* ----- Arrangementer ----- */
 
