@@ -10,9 +10,8 @@ body {
     background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
     margin: 0;
     padding: 0;
-    font-family: sofia-pro-condensed, sans-serif, sans-serif;
+    font-family: "Sofia Sans Condensed", sans-serif;
 }
-
 
 /* ----- Forside ----- */
 
@@ -112,28 +111,25 @@ body {
 
 /* ----- Barkort ----- */
 #barkort-overskrift {
-    font-family: "Sofia Sans Condensed", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     color: var(--guld);
     font-size: 2.7rem;
-
     text-align: center;
 }
 
 .barkort-billed {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 5rem 2rem 5rem;
 }
 
 .barkort-billed img {
-    width: 100%;
+    width: 35rem;
+    height: auto;
     border-radius: 1.4rem; /* Afrundet hjørner */
 }
-
 
 
 /* ----- Flaskekort ----- */
