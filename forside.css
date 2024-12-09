@@ -62,7 +62,7 @@ body {
   background-color: #66a160;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 38px;
   color: #fff;
   cursor: pointer;
 }
@@ -70,13 +70,15 @@ body {
 #london-welcome-section {
   text-align: center;
   padding: 50px 0;
-  background-image: url('images/welcome-bg.jpg'); /* Add a background image */
+  background-color: var(--primaer-groen);  
   background-size: cover;
   color: #fff;
 }
 
 #london-welcome-title {
   font-size: 2em;
+  background-color: var(--primaer-groen);  
+
 }
 
 .london-buttons {
@@ -88,19 +90,20 @@ body {
   border: none;
   padding: 10px 15px;
   margin: 0 10px;
-  border-radius: 5px;
+  border-radius: 38px;
   color: #fff;
   cursor: pointer;
 }
 
 #london-about-section, #london-packages-section {
   padding: 40px 20px;
-  text-align: center;
-  background-color: #2a2a2a; /* Dark background for sections */
+  text-align: left;
+  background-color: #345D5C; 
+   
 }
 
 #london-package-1 {
-  background-color: #3a3a3a; /* Slightly lighter for contrast */
+  background-color: var(--primaer-groen-groen); 
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
@@ -132,4 +135,7 @@ body {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
+}
+.img{
+  align-items: normal;
 }
