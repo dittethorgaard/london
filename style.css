@@ -1,4 +1,4 @@
-/* GENERELT */
+/* ----- General ----- */
 :root {
     --primaer-hvid: #FFFFFF;
     --primaer-sort: #000000;
@@ -8,39 +8,110 @@
 }
 body {
     background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
+    margin: 0;
+    padding: 0;
+    font-family: sofia-pro-condensed, sans-serif, sans-serif;
 }
 
-/* font-family: "Montserrat", sans-serif; */
-/* font-family: "Sofia Sans Condensed", sans-serif; */
-/* -------------------------------------------------------------- */
-/* HEADER */
 
-/* -------------------------------------------------------------- */
-/* FOOTER */
 
-/* -------------------------------------------------------------- */
-/* FORSIDE */
+/* ----- Forside ----- */
 
-/* -------------------------------------------------------------- */
-/* BORDPAKKER */
 
-/* -------------------------------------------------------------- */
-/* COCKTAILKURSUS */
 
-/* -------------------------------------------------------------- */
-/* ARRANGEMENTER */
 
-/* -------------------------------------------------------------- */
-/* FREDAGSBAR */
+/* ----- Arrangementer ----- */
 
-/* -------------------------------------------------------------- */
-/* PRIVATE ARRANGEMENTER */
 
-/* -------------------------------------------------------------- */
-/* GLEMTE SAGER */
 
-/* -------------------------------------------------------------- */
-/* BARKORT */
+
+/* ----- Fredagsbar ----- */
+.main-content {
+    padding: 2rem;
+    background-color: #013533;
+    color: white;
+  }
+  
+  .hero-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    color: #d4a853;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    background-color: #1e3937;
+    color: #d4a853;
+    border: 2px solid #d4a853;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .packages-section {
+    margin-top: 4rem;
+  }
+  
+  .packages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .package-card {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .package-card h2 {
+    color: #d4a853;
+    margin-bottom: 1rem;
+  }
+
+
+
+/* ----- Privat Arrangementer ----- */
+
+
+
+
+/* ----- Cocktail kursus ----- */
+
+
+
+
+/* ----- Bordpakker ----- */
+
+
+
+
+/* ----- Barkort ----- */
 #barkort-overskrift {
     font-family: "Sofia Sans Condensed", sans-serif;
     font-optical-sizing: auto;
@@ -53,14 +124,88 @@ body {
 }
 
 .barkort-billed {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
 }
 
 .barkort-billed img {
-    width: 80%; /* Bredden på billedet */
+    width: 100%;
     border-radius: 1.4rem; /* Afrundet hjørner */
 }
-/* -------------------------------------------------------------- */
-/* FLASKEKORT */
+
+
+
+/* ----- Flaskekort ----- */
+
+
+
+
+/* ----- Glemtesager ----- */
+
+
+
+
+/* ------ Responsivt ----- */
+
+
+
+/* ----- Forside ----- */
+
+
+
+
+/* ----- Arrangementer ----- */
+
+
+
+
+/* ----- Fredagsbar ----- */
+@media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+    }
+  
+    .packages-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 1rem;
+    }
+  
+    .package-card {
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+      margin-right: 1rem;
+    }
+  }
+
+
+/* ----- Privat Arrangementer ----- */
+
+
+
+
+/* ----- Cocktail kursus ----- */
+
+
+
+
+/* ----- Bordpakker ----- */
+
+
+
+
+/* ----- Barkort ----- */
+
+
+
+
+/* ----- Flaskekort ----- */
+
+
+
+
+/* ----- Glemtesager ----- */
