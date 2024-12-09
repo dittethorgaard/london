@@ -1,20 +1,16 @@
 /* ----- General ----- */
+:root {
+    --primaer-hvid: #FFFFFF;
+    --primaer-sort: #000000;
+    --primaer-groen: #013533;
+    --sekundaer-groen: #338D6D;
+    --guld: #F39200;
+}
 body {
+    background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
     margin: 0;
     padding: 0;
     font-family: sofia-pro-condensed, sans-serif, sans-serif;
-    background: #013533
-    
-}
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 1 to 1000
-
-.sofia-sans-condensed-<uniquifier> {
-  font-family: "Sofia Sans Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 
 
@@ -115,7 +111,28 @@ body {
 
 
 /* ----- Barkort ----- */
+#barkort-overskrift {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--guld);
+    font-size: 2.7rem;
 
+    text-align: center;
+}
+
+.barkort-billed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.barkort-billed img {
+    width: 100%;
+    border-radius: 1.4rem; /* Afrundet hjørner */
+}
 
 
 
