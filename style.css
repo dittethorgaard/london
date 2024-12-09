@@ -1,0 +1,66 @@
+/* GENERELT */
+:root {
+    --primaer-hvid: #FFFFFF;
+    --primaer-sort: #000000;
+    --primaer-groen: #013533;
+    --sekundaer-groen: #338D6D;
+    --guld: #F39200;
+}
+body {
+    background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
+}
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Sofia Sans Condensed", sans-serif; */
+/* -------------------------------------------------------------- */
+/* HEADER */
+
+/* -------------------------------------------------------------- */
+/* FOOTER */
+
+/* -------------------------------------------------------------- */
+/* FORSIDE */
+
+/* -------------------------------------------------------------- */
+/* BORDPAKKER */
+
+/* -------------------------------------------------------------- */
+/* COCKTAILKURSUS */
+
+/* -------------------------------------------------------------- */
+/* ARRANGEMENTER */
+
+/* -------------------------------------------------------------- */
+/* FREDAGSBAR */
+
+/* -------------------------------------------------------------- */
+/* PRIVATE ARRANGEMENTER */
+
+/* -------------------------------------------------------------- */
+/* GLEMTE SAGER */
+
+/* -------------------------------------------------------------- */
+/* BARKORT */
+#barkort-overskrift {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--guld);
+    font-size: 2.7rem;
+
+    text-align: center;
+}
+
+.barkort-billed {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.barkort-billed img {
+    width: 80%; /* Bredden på billedet */
+    border-radius: 1.4rem; /* Afrundet hjørner */
+}
+/* -------------------------------------------------------------- */
+/* FLASKEKORT */
