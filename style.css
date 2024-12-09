@@ -7,6 +7,15 @@ body {
     
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 1 to 1000
+
+.sofia-sans-condensed-<uniquifier> {
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 
 /* ----- Forside ----- */
