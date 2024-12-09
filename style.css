@@ -130,6 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  color: var(--primaer-hvid);
 }
 
 .cocktail-text h1 {
@@ -140,15 +141,11 @@ body {
 
 .cocktail-text h2 {
   font-size: 1.2rem;
-  line-height: 1.4;
 }
 
-.cocktail-text p {
-  line-height: 1.6;
-}
 .cta-knap {
-  background-color: #E4A853;
-  color: #000000;
+  background-color: var(--primaer-groen);
+  color: var(--guld);
   border: none;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -170,6 +167,7 @@ body {
 
 .course-card {
   background-color: #0A4744;
+  color: var(--primaer-hvid);
   padding: 2rem;
   border-radius: 10px;
   display: flex;
