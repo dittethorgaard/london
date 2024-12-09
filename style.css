@@ -1,5 +1,11 @@
 /* ----- General ----- */
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sofia-pro-condensed, sans-serif, sans-serif;
+    background: #013533
+    
+}
 
 
 
@@ -16,7 +22,7 @@
 /* ----- Fredagsbar ----- */
 .main-content {
     padding: 2rem;
-    background-color: #1e3937;
+    background-color: #013533;
     color: white;
   }
   
