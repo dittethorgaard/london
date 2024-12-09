@@ -3,7 +3,7 @@
     --primaer-hvid: #FFFFFF;
     --primaer-sort: #000000;
     --primaer-groen: #013533;
-    --sekundaer-groen: #338D6D;
+    --sekundaer-groen: #345D5C;
     --guld: #F39200;
 }
 body {
@@ -110,7 +110,7 @@ body {
 .cocktail-content {
   display: flex;
   gap: 4rem;
-  background-color: #0A4744;
+  background-color: var(--sekundaer-groen);
   border-radius: 15px;
   padding: 2rem;
 }
@@ -129,12 +129,11 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   color: var(--primaer-hvid);
 }
 
 .cocktail-text h1 {
-  color: #E4A853;
+  color: var(--guld);
   font-size: 2.5rem;
   font-family: 'Sofia Sans Condensed', sans-serif;
 }
@@ -176,7 +175,7 @@ body {
 }
 
 .course-card h3 {
-  color: #E4A853;
+  color: var(--guld);
   font-family: 'Sofia Sans Condensed', sans-serif;
   font-size: 1.5rem;
 }
@@ -193,7 +192,7 @@ body {
 
 .course-card li::before {
   content: "•";
-  color: #E4A853;
+  color: var(--guld);
   position: absolute;
   left: 0;
 }
