@@ -100,9 +100,105 @@ body {
 
 
 /* ----- Cocktail kursus ----- */
+/* Cocktail Section */
+.cocktail {
+  padding: 6rem 2rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
+.cocktail-content {
+  display: flex;
+  gap: 4rem;
+  background-color: #0A4744;
+  border-radius: 15px;
+  padding: 2rem;
+}
 
+.cocktail-image {
+  flex: 1;
+}
+.cocktail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
+.cocktail-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cocktail-text h1 {
+  color: #E4A853;
+  font-size: 2.5rem;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.cocktail-text h2 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.cocktail-text p {
+  line-height: 1.6;
+}
+.cta-knap {
+  background-color: #E4A853;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+/* Course Types Section */
+.course-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background-color: #0A4744;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.course-card h3 {
+  color: #E4A853;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+.course-card ul {
+  list-style: none;
+}
+
+.course-card li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.course-card li::before {
+  content: "•";
+  color: #E4A853;
+  position: absolute;
+  left: 0;
+}
 
 /* ----- Bordpakker ----- */
 
