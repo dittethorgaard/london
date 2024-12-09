@@ -4,13 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Bar</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/script.js" defer></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
-        </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body class="london-bar">
+    <header id="header">
+        <div class="container">
+            <h1 id="bar-name">L O N D O N</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" class="nav-item">Bordpakker</a></li>
+                    <li><a href="#" class="nav-item">Sortiment</a></li>
+                    <li><a href="#" class="nav-item">Cocktail Kursus</a></li>
+                    <li><a href="#" class="nav-item">Arrangementer</a></li>
+                    <li><a href="#" class="nav-item">Glemte Sager</a></li>
+                    <li><a href="#" class="book-btn">BOOK BORD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="welcome" id="welcome-section">
+            <h2 id="welcome-title">VELKOMMEN TIL LONDON BAR</h2>
+            <div class="buttons" id="welcome-buttons">
+                <button class="button-item">Barkort</button>
+                <button class="button-item">Flaskekort</button>
+                <button class="button-item">Bordpakker</button>
+            </div>
+        </section>
+
+        <section class="about" id="about-section">
+            <h2 id="about-title">LONDON BAR</h2>
+            <p id="about-description">Er du til lækre cocktails og dansegulv for det voksne publikum, så er London bar i Aarhus stedet. Fokus på høj kvalitet, god service, hyggelig stemning og DJ der spiller den bedste blanding af nyt og gammelt.</p>
+        </section>
+
+        <section class="packages" id="packages-section">
+            <h2 id="packages-title">BORDPAKKER</h2>
+            <p id="packages-description">Hvis du ved at I skal i byen, så husk at skrive i god tid og book et bord. Det er gratis at booke, men hvis man er for sent ude, så er der ikke noget vi kan gøre.</p>
+            <div class="package" id="package-1">
+                <h3 id="package-title">BORDPAKKE 1</h3>
+                <p id="package-price">500 ,-</p>
+                <p id="package-details">2x Pitcher</p>
+                <p id="package-options">Vælg mellem: Gin Hass, Bramble, Passionada eller Fruity Safari</p>
+                <button class="book-btn">BOOK BORD</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <h2 id="footer-title">London Bar</h2>
+            <p id="opening-hours">Åbningstider: Fredag & Lørdag 20:00 - ???</p>
+            <p id="age-restriction">Aldersgrænse: +25</p>
+            <form id="newsletter-form">
+                <label for="newsletter">Nyhedsbrev</label>
+                <input type="email" id="newsletter" placeholder="Email" required>
+                <button type="submit">Tilmeld</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
