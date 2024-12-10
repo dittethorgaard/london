@@ -24,7 +24,6 @@ body {
 
 
 
-
 /* ----- Fredagsbar ----- */
 .fredagsbarside-content {
     padding: 2rem;
@@ -111,7 +110,7 @@ body {
 /* Cocktail Section */
 .cocktail {
   padding: 6rem 2rem 1rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 2rem auto;
 }
 
@@ -130,7 +129,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 .cocktail-text {
@@ -165,10 +164,10 @@ body {
 /* Course Types Section */
 .course-types {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
   padding: 3rem 2rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
 }
 
@@ -178,6 +177,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+
 .course-card img {
   border-radius: 1.5rem;
 }
@@ -185,7 +185,7 @@ body {
 /* ----- Bordpakker ----- */
 .bordpakker {
   padding: 6rem 2rem 1rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
 }
 
@@ -220,10 +220,10 @@ body {
 /* Bordpakkerne oversigt Section */
 .bordpakkerne {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem 1fr));
   gap: 2rem;
   padding: 3rem 2rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
 }
 
@@ -233,6 +233,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+
 .bordpakke img {
   border-radius: 1.5rem;
 }
@@ -394,7 +395,15 @@ body {
 
 
 /* ----- Cocktail kursus ----- */
-
+@media (max-width: 425px) {
+  .cocktail-content {
+    flex-direction: column;
+  }
+  .course-types {
+    margin: 0 2rem;
+    padding: 1.5rem;
+  }
+}
 
 
 
