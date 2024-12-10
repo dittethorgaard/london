@@ -14,8 +14,6 @@ body {
 }
 
 
-
-
 /* ----- Arrangementer ----- */
 #arrangementer-overskrift {
   font-weight: 700;
@@ -28,36 +26,36 @@ body {
 
 
 /* ----- Fredagsbar ----- */
-.main-content {
+.fredagsbarside-content {
     padding: 2rem;
     background-color: #345D5C;
     color: white;
   }
   
-  .hero-section {
+  .fredagsbar-section {
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  .hero-content {
+  .fredagsbar-content {
     display: flex;
     gap: 2rem;
   }
   
-  .hero-image {
+  .fredagsbar-image {
     flex: 1;
   }
   
-  .hero-image img {
+  .fredagsbar-image img {
     width: 100%;
     border-radius: 10px;
   }
   
-  .hero-text {
+  .fredagsbar-text {
     flex: 1;
   }
   
-  .hero-text h1 {
+  .fredagsbar-text h1 {
     color: #d4a853;
     margin-bottom: 1rem;
   }
