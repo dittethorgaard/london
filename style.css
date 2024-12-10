@@ -25,83 +25,62 @@ body {
 
 
 /* ----- Fredagsbar ----- */
-.fredagsbarside-content {
+/* ----- Fredagsbar ----- */
+.fredagsbar-section {
     padding: 2rem;
-    background-color: #345D5C;
-    color: white;
-  }
-  
-  .fredagsbar-section {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .fredagsbar-content {
+}
+
+.fredagsbar-content {
     display: flex;
     gap: 2rem;
-  }
-  
-  .fredagsbar-image {
-    flex: 1;
-  }
-  
-  .fredagsbar-image img {
-    width: 70%;
-    border-radius: 10px;
-  }
-  
-  .fredagsbar-text {
-    flex: 1;
-  }
-  
-  .fredagsbar-text h1 {
-    color: #d4a853;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-button {
-    background-color: #1e3937;
-    color: #d4a853;
-    border: 2px solid #d4a853;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-    
-  }
-  
-  .packages-section {
-    margin-top: 4rem;
-  }
-  
-  .packages-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .package-card {
-    background-image: url('Images/background2.webp');
+    background-color: var(--sekundaer-groen);
+    border-radius: 1rem;
     padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .package-card h2 {
-    color: #d4a853;
+}
+
+.fredagsbar-text {
+    flex: 1;
+    color: var(--primaer-hvid);
+}
+
+.fredagsbar-text h1 {
+    color: var(--guld);
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
-  }
+}
 
-  .package-card p {
-    font-size: 1.2rem;
-  }
+.fredagsbar-image {
+    flex: 1;
+}
+
+.fredagsbar-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.book-button {
+    background-color: var(--primaer-groen);
+    color: var(--guld);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
 
 
 
-/* ----- Privat Arrangementer ----- */
 /* ----- Privat Arrangementer ----- */
 .private-section {
     padding: 2rem;
@@ -236,7 +215,7 @@ body {
 
 .modal-content {
     background-color: var(--sekundaer-groen);
-    margin: 15% auto;
+    margin: 2% auto;
     padding: 2rem;
     border-radius: 1rem;
     width: 80%;
@@ -502,7 +481,7 @@ body {
 .lost-items-section {
     max-width: 600px;
     padding: 2rem;
-    background-color: #1e3937;
+    background-color: var(--sekundaer-groen);
     border-radius: 10px;
     text-align: center;
 }
@@ -558,24 +537,14 @@ body {
 
 /* ----- Fredagsbar ----- */
 @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column;
+    .fredagsbar-content {
+        flex-direction: column;
     }
-  
-    .packages-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding: 1rem;
+
+    .fredagsbar-text h1 {
+        font-size: 2rem;
     }
-  
-    .package-card {
-      flex: 0 0 80%;
-      scroll-snap-align: center;
-      margin-right: 1rem;
-    }
-  }
+}
 
 
 /* ----- Privat Arrangementer ----- */
