@@ -27,3 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
       packagesContainer.scrollLeft = scrollLeft - walk;
     });
   });
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Tak for din henvendelse, vi tjekker vores glemte sager igennem og vender tilbage om 1-2 arbejdsdage");
+}
