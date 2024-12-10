@@ -778,6 +778,6 @@ body {
     
     .sortiment-item {
         width: 100%;
-        max-width: 320px;
+        max-width: auto;
     }
 }
