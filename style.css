@@ -17,6 +17,12 @@ body {
 
 
 /* ----- Arrangementer ----- */
+#arrangementer-overskrift {
+  font-weight: 700;
+  color: var(--guld);
+  font-size: 2.7rem;
+  text-align: center;
+}
 
 
 
