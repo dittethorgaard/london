@@ -557,25 +557,59 @@ body {
 
 /* ----- Sortiment ----- */
 
-#sortiment-overskrift {
-    font-weight: 700;
-    color: var(--guld);
-    font-size: 2.7rem;
+.sortiment-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sortiment-page h1 {
     text-align: center;
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-.sortiment-billed {
+.sortiment-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
-    padding: 0 5rem 2rem 5rem;
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
-.sortiment-billed img {
-    width: 35rem;
-    height: auto;
-    border-radius: 0.7rem; /* Afrundet hjørner */
+.sortiment-item {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.sortiment-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.sortiment-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+/* Hover effekt */
+.sortiment-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 
@@ -720,5 +754,30 @@ body {
     .lost-items-form button {
         padding: 0.8rem;
         font-size: 0.9rem;
+    }
+}
+
+/* ----- Sortiment ----- */
+
+@media (max-width: 1024px) {
+    .sortiment-grid {
+        gap: 1.5rem;
+    }
+    
+    .sortiment-item {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sortiment-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sortiment-item {
+        width: 100%;
+        max-width: 320px;
     }
 }
