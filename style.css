@@ -25,7 +25,6 @@ body {
 
 
 /* ----- Fredagsbar ----- */
-/* ----- Fredagsbar ----- */
 .fredagsbar-section {
     padding: 2rem;
     max-width: 1200px;
@@ -555,6 +554,29 @@ body {
     background-color: #b38f3b;
 }
 
+
+/* ----- Sortiment ----- */
+
+#sortiment-overskrift {
+    font-weight: 700;
+    color: var(--guld);
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.sortiment-billed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 5rem 2rem 5rem;
+}
+
+.sortiment-billed img {
+    width: 35rem;
+    height: auto;
+    border-radius: 0.7rem; /* Afrundet hjørner */
+}
 
 
 /* ---------------------------- Responsivt --------------------------------- */
