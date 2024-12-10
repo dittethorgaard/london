@@ -100,7 +100,7 @@ body {
 /* ----- Cocktail kursus ----- */
 /* Cocktail Section */
 .cocktail {
-  padding: 6rem 2rem 2rem;
+  padding: 6rem 2rem 1rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -109,7 +109,7 @@ body {
   display: flex;
   gap: 4rem;
   background-color: var(--sekundaer-groen);
-  border-radius: 15px;
+  border-radius: 1.5rem;
   padding: 2rem;
 }
 
@@ -120,7 +120,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .cocktail-text {
@@ -146,7 +146,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 1rem;
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s;
@@ -157,42 +157,19 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .course-card {
-  background-color: #0A4744;
-  color: var(--primaer-hvid);
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 0.3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
-.course-card h3 {
-  color: var(--guld);
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  font-size: 1.5rem;
-}
-
-.course-card ul {
-  list-style: none;
-}
-
-.course-card li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.course-card li::before {
-  content: "•";
-  color: var(--guld);
-  position: absolute;
-  left: 0;
+.course-card img {
+  border-radius: 1.5rem;
 }
 
 /* ----- Bordpakker ----- */
