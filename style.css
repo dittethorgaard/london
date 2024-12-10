@@ -102,7 +102,196 @@ body {
 
 
 /* ----- Privat Arrangementer ----- */
+/* ----- Privat Arrangementer ----- */
+.private-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.private-content {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--sekundaer-groen);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.private-text {
+    flex: 1;
+    color: var(--primaer-hvid);
+}
+
+.private-text h1 {
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.private-image {
+    flex: 1;
+}
+
+.private-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.book-button {
+    background-color: var(--primaer-groen);
+    color: var(--guld);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-image: url('images/background2.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--primaer-hvid);
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.menu-card h2, 
+.menu-card p, 
+.menu-card button {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-card h2 {
+    color: var(--guld);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: var(--guld);
+    border: 2px solid var(--guld);
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.menu-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--sekundaer-groen);
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    color: var(--primaer-hvid);
+    max-height: 80vh; /* Maksimal højde på 80% af viewport height */
+    overflow-y: auto; /* Tilføjer scroll hvis indholdet er for langt */
+
+}
+
+.close {
+    color: var(--guld);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--primaer-hvid);
+}
+
+.modal-content h3 {
+    color: var(--guld);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Styling for scrollbar */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--guld);
+    border-radius: 4px;
+}
 
 
 
@@ -329,13 +518,63 @@ body {
 .flaskekort-billed img {
     width: 35rem;
     height: auto;
-    border-radius: 1.4rem; /* Afrundet hjørner */
+    border-radius: 0.7rem; /* Afrundet hjørner */
 }
 
 
 
 /* ----- Glemtesager ----- */
+.glemtesager {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.lost-items-section {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #1e3937;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.lost-items-section h1 {
+    color: var(--guld);
+    margin-bottom: 1rem;
+}
+
+.lost-items-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lost-items-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.lost-items-form button {
+    background-color: var(--guld);
+    color: #1e3937;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.lost-items-form button:hover {
+    background-color: #b38f3b;
+}
 
 
 
@@ -376,7 +615,24 @@ body {
 
 
 /* ----- Privat Arrangementer ----- */
+@media (max-width: 768px) {
+    .private-content {
+        flex-direction: column;
+    }
 
+    .menu-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .private-text h1 {
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        margin: 20% auto;
+        width: 90%;
+    }
+}
 
 
 
@@ -404,8 +660,74 @@ body {
 
 
 /* ----- Flaskekort ----- */
+@media screen and (max-width: 768px) {
+    #flaskekort-overskrift {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
 
+    .flaskekort-billed {
+        padding: 0 1rem 1rem 1rem;
+        gap: 1rem;
+    }
+
+    .flaskekort-billed img {
+        width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
+        max-width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
+        margin-bottom: 1rem;
+    }
+}
+
+/* Ekstra små skærme */
+@media screen and (max-width: 480px) {
+    #flaskekort-overskrift {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .flaskekort-billed {
+        padding: 0 0.5rem 0.5rem 0.5rem;
+    }
+}
 
 
 
 /* ----- Glemtesager ----- */
+
+@media screen and (max-width: 768px) {
+    .glemtesager {
+        padding: 1rem;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .lost-items-section {
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .lost-items-section h1 {
+        font-size: 1.5rem; /* Mindre font størrelse på mobil */
+    }
+
+    .lost-items-section p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .lost-items-form {
+        gap: 0.8rem;
+    }
+
+    .lost-items-form input {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .lost-items-form button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
