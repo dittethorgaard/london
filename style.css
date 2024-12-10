@@ -215,12 +215,48 @@ body {
 }
 
 /* bordpakke slideshow */
+.drink-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.drink-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.drink-info {
+  color: var(--primaer-hvid);
+}
+
+.drink-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: medium;
+}
+
+.quantity {
+  font-size: 1rem;
+}
+.options {
+  font-size: 1rem;
+  font-weight: light;
+  line-height: 1.4;
+}
+
+/* Navigationspillene */
 
 
 /* Bordpakkerne oversigt Section */
 .bordpakkerne {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
   padding: 3rem 2rem;
   max-width: 87.5rem;
