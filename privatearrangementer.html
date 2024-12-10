@@ -11,6 +11,53 @@
         </style>
 </head>
 <body>
-    
+    <div class="private-section">
+        <div class="private-content">
+            <div class="private-text">
+                <h1>PRIVATE ARRANGEMENTER</h1>
+                <p>HOLD JERES NÆSTE ARRANGEMENT HOS OS!</p>
+                <p>På London Bar tilbyder vi private arrangementer, virksomheder, eller diverse foreningsarrangementer. Udover bartendere og serveringer har vi sammensætning på programmet jeres ønsker og behov - med det formål at skabe en aften man ikke vil gå glip af til fremtidige samtaler.</p>
+                <p>Vores normale åbningstider er fredag og lørdag fra 20-05, men det er også muligt at booke baren på alle andre tidspunkter. Vi tilbyder i det hele taget en specifik menu og setup tilpasset lige til dit ønskede private arrangement. Kontakt os for nærmere info på 1-2-3 procent.</p>
+                <p>Vi ved godt det er meget at vælge imellem, og derfor har vi sammensat tre af de bedste og generelle formationer, og tilpasset et menu derefter, udfra de arrangementer.</p>
+                <p>Vores gæstende arrangementer inkluderer følgende:</p>
+                <p><strong>Maden:</strong><br>
+                På London Bar kan du vælge alt fra tapas eventyrlige til diverse 3-retters buffeter. Disse inkluder både fra vegetariske til kød elskere. Vores køkken har også et stort udvalg af snacks buffeter, der kan vælges i perioder af serveringer, plademadder og sammensatte.</p>
+                <p>Pris ligger fra 175,- til 450,- inklusiv. Kontakt os og få lavet den bedste løsning til jer.</p>
+                <button class="book-button">BOOK PRIVATARRANGEMENT</button>
+            </div>
+            <div class="private-image">
+                <img src="images/private-arrangementer.webp" alt="London Bar aften stemning">
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-cards">
+        <div class="menu-card tapas">
+            <h2>TAPAS</h2>
+            <p>Fra 250,- pr. person</p>
+            <button class="menu-button" onclick="openMenu('tapas')">SE MENU</button>
+        </div>
+        <div class="menu-card standard">
+            <h2>STANDARD<br>BUFFET</h2>
+            <p>Fra 275,- pr. person</p>
+            <button class="menu-button" onclick="openMenu('standard')">SE MENU</button>
+        </div>
+        <div class="menu-card luksus">
+            <h2>LUKSUS<br>BUFFET</h2>
+            <p>Fra 375,- pr. person</p>
+            <button class="menu-button" onclick="openMenu('luksus')">SE MENU</button>
+        </div>
+    </div>
+
+    <!-- Modal for menu -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Menu Title</h2>
+            <div id="modalContent">
+                <!-- Menu content will be inserted here -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>

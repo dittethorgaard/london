@@ -14,102 +14,278 @@ body {
 }
 
 
-
-
 /* ----- Arrangementer ----- */
-
+#arrangementer-overskrift {
+  font-weight: 700;
+  color: var(--guld);
+  font-size: 2.7rem;
+  text-align: center;
+}
 
 
 
 /* ----- Fredagsbar ----- */
-.main-content {
+.fredagsbar-section {
     padding: 2rem;
-    background-color: #345D5C;
-    color: white;
-  }
-  
-  .hero-section {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .hero-content {
+}
+
+.fredagsbar-content {
     display: flex;
     gap: 2rem;
-  }
-  
-  .hero-image {
-    flex: 1;
-  }
-  
-  .hero-image img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .hero-text {
-    flex: 1;
-  }
-  
-  .hero-text h1 {
-    color: #d4a853;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-button {
-    background-color: #1e3937;
-    color: #d4a853;
-    border: 2px solid #d4a853;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .packages-section {
-    margin-top: 4rem;
-  }
-  
-  .packages-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .package-card {
-    background: rgba(0, 0, 0, 0.3);
+    background-color: var(--sekundaer-groen);
+    border-radius: 1rem;
     padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .package-card h2 {
-    color: #d4a853;
+}
+
+.fredagsbar-text {
+    flex: 1;
+    color: var(--primaer-hvid);
+}
+
+.fredagsbar-text h1 {
+    color: var(--guld);
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-  }
+}
+
+.fredagsbar-image {
+    flex: 1;
+}
+
+.fredagsbar-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.book-button {
+    background-color: var(--primaer-groen);
+    color: var(--guld);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
 
 
 
 /* ----- Privat Arrangementer ----- */
+.private-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.private-content {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--sekundaer-groen);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.private-text {
+    flex: 1;
+    color: var(--primaer-hvid);
+}
+
+.private-text h1 {
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.private-image {
+    flex: 1;
+}
+
+.private-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.book-button {
+    background-color: var(--primaer-groen);
+    color: var(--guld);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-image: url('images/background2.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--primaer-hvid);
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.menu-card h2, 
+.menu-card p, 
+.menu-card button {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-card h2 {
+    color: var(--guld);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: var(--guld);
+    border: 2px solid var(--guld);
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.menu-button:hover {
+    background-color: var(--guld);
+    color: var(--primaer-groen);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--sekundaer-groen);
+    margin: 2% auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    color: var(--primaer-hvid);
+    max-height: 80vh; /* Maksimal højde på 80% af viewport height */
+    overflow-y: auto; /* Tilføjer scroll hvis indholdet er for langt */
+
+}
+
+.close {
+    color: var(--guld);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--primaer-hvid);
+}
+
+.modal-content h3 {
+    color: var(--guld);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Styling for scrollbar */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--guld);
+    border-radius: 4px;
+}
 
 
 
 /* ----- Cocktail kursus ----- */
 /* Cocktail Section */
 .cocktail {
-  padding: 6rem 2rem 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 6rem 2rem 1rem;
+  max-width: 87.5rem;
+  margin: 2rem auto;
 }
 
 .cocktail-content {
   display: flex;
   gap: 4rem;
   background-color: var(--sekundaer-groen);
-  border-radius: 15px;
+  border-radius: 1.5rem;
   padding: 2rem;
 }
 
@@ -120,7 +296,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1.5rem;
 }
 
 .cocktail-text {
@@ -146,7 +322,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 1rem;
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s;
@@ -155,49 +331,145 @@ body {
 /* Course Types Section */
 .course-types {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
-  padding: 4rem 2rem;
-  max-width: 1400px;
+  padding: 3rem 2rem;
+  max-width: 87.5rem;
   margin: 0 auto;
 }
 
 .course-card {
-  background-color: #0A4744;
-  color: var(--primaer-hvid);
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 0.3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.course-card h3 {
-  color: var(--guld);
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  font-size: 1.5rem;
-}
-
-.course-card ul {
-  list-style: none;
-}
-
-.course-card li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.course-card li::before {
-  content: "•";
-  color: var(--guld);
-  position: absolute;
-  left: 0;
+.course-card img {
+  border-radius: 1.5rem;
 }
 
 /* ----- Bordpakker ----- */
+.bordpakker {
+  padding: 6rem 2rem 1rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
 
+.bordpakker-content {
+  display: flex;
+  gap: 4rem;
+  background-color: var(--sekundaer-groen);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
 
+.bordpakker-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: var(--primaer-hvid);
+}
+
+.bordpakker-text h1 {
+  color: var(--guld);
+  font-size: 2.5rem;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.bordpakker-text h2 {
+  font-size: 1.2rem;
+}
+
+/* bordpakke slideshow */
+.drink-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.drink-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.drink-info {
+  color: var(--primaer-hvid);
+}
+
+.drink-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: medium;
+}
+
+.quantity {
+  font-size: 1rem;
+}
+.options {
+  font-size: 1rem;
+  font-weight: light;
+  line-height: 1.4;
+}
+
+/* Navigationspillene */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.8rem 0.8rem 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 4rem;
+}
+
+/* Bordpakkerne oversigt Section */
+.bordpakkerne {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+.bordpakke {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bordpakke img {
+  border-radius: 1.5rem;
+}
+
+.cta-knappen {
+  background-color: var(--sekundaer-groen);
+  color: var(--guld);
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: medium;
+  border-radius: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
 
 
 /* ----- Barkort ----- */
@@ -224,16 +496,142 @@ body {
 
 
 /* ----- Flaskekort ----- */
+#flaskekort-overskrift {
+    font-weight: 700;
+    color: var(--guld);
+    font-size: 2.7rem;
+    text-align: center;
+}
 
+.flaskekort-billed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 5rem 2rem 5rem;
+}
+
+.flaskekort-billed img {
+    width: 35rem;
+    height: auto;
+    border-radius: 0.7rem; /* Afrundet hjørner */
+}
 
 
 
 /* ----- Glemtesager ----- */
+.glemtesager {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lost-items-section {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: var(--sekundaer-groen);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.lost-items-section h1 {
+    color: var(--guld);
+    margin-bottom: 1rem;
+}
+
+.lost-items-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lost-items-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.lost-items-form button {
+    background-color: var(--guld);
+    color: #1e3937;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.lost-items-form button:hover {
+    background-color: #b38f3b;
+}
 
 
+/* ----- Sortiment ----- */
+
+.sortiment-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sortiment-page h1 {
+    text-align: center;
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.sortiment-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.sortiment-item {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.sortiment-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.sortiment-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+/* Hover effekt */
+.sortiment-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 
-/* ------ Responsivt ----- */
+/* ---------------------------- Responsivt --------------------------------- */
 
 
 
@@ -249,33 +647,48 @@ body {
 
 /* ----- Fredagsbar ----- */
 @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column;
+    .fredagsbar-content {
+        flex-direction: column;
     }
-  
-    .packages-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding: 1rem;
+
+    .fredagsbar-text h1 {
+        font-size: 2rem;
     }
-  
-    .package-card {
-      flex: 0 0 80%;
-      scroll-snap-align: center;
-      margin-right: 1rem;
-    }
-  }
+}
 
 
 /* ----- Privat Arrangementer ----- */
+@media (max-width: 768px) {
+    .private-content {
+        flex-direction: column;
+    }
 
+    .menu-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .private-text h1 {
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        margin: 20% auto;
+        width: 90%;
+    }
+}
 
 
 
 /* ----- Cocktail kursus ----- */
-
+@media (max-width: 425px) {
+  .cocktail-content {
+    flex-direction: column;
+  }
+  .course-types {
+    margin: 0 2rem;
+    padding: 1.5rem;
+  }
+}
 
 
 
@@ -290,8 +703,99 @@ body {
 
 
 /* ----- Flaskekort ----- */
+@media screen and (max-width: 768px) {
+    #flaskekort-overskrift {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
 
+    .flaskekort-billed {
+        padding: 0 1rem 1rem 1rem;
+        gap: 1rem;
+    }
+
+    .flaskekort-billed img {
+        width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
+        max-width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
+        margin-bottom: 1rem;
+    }
+}
+
+/* Ekstra små skærme */
+@media screen and (max-width: 480px) {
+    #flaskekort-overskrift {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .flaskekort-billed {
+        padding: 0 0.5rem 0.5rem 0.5rem;
+    }
+}
 
 
 
 /* ----- Glemtesager ----- */
+
+@media screen and (max-width: 768px) {
+    .glemtesager {
+        padding: 1rem;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .lost-items-section {
+        padding: 1rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .lost-items-section h1 {
+        font-size: 1.5rem; /* Mindre font størrelse på mobil */
+    }
+
+    .lost-items-section p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .lost-items-form {
+        gap: 0.8rem;
+    }
+
+    .lost-items-form input {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .lost-items-form button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ----- Sortiment ----- */
+
+@media (max-width: 1024px) {
+    .sortiment-grid {
+        gap: 1.5rem;
+    }
+    
+    .sortiment-item {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sortiment-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sortiment-item {
+        width: 100%;
+        max-width: auto;
+    }
+}
