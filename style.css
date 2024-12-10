@@ -67,7 +67,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
-
+    
   }
   
   .packages-section {
@@ -275,7 +275,26 @@ body {
 
 
 /* ----- Flaskekort ----- */
+#flaskekort-overskrift {
+    font-weight: 700;
+    color: var(--guld);
+    font-size: 2.7rem;
+    text-align: center;
+}
 
+.flaskekort-billed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 5rem 2rem 5rem;
+}
+
+.flaskekort-billed img {
+    width: 35rem;
+    height: auto;
+    border-radius: 1.4rem; /* Afrundet hjørner */
+}
 
 
 
@@ -284,7 +303,7 @@ body {
 
 
 
-/* ------ Responsivt ----- */
+/* ---------------------------- Responsivt --------------------------------- */
 
 
 
