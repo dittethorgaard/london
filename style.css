@@ -243,6 +243,9 @@ body {
     max-width: 600px;
     position: relative;
     color: var(--primaer-hvid);
+    max-height: 80vh; /* Maksimal højde på 80% af viewport height */
+    overflow-y: auto; /* Tilføjer scroll hvis indholdet er for langt */
+
 }
 
 .close {
@@ -258,6 +261,37 @@ body {
     color: var(--primaer-hvid);
 }
 
+.modal-content h3 {
+    color: var(--guld);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Styling for scrollbar */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--guld);
+    border-radius: 4px;
+}
 
 
 
