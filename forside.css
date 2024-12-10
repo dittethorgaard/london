@@ -1,15 +1,16 @@
 :root {
-    --primaer-hvid: #FFFFFF;
-    --primaer-sort: #000000;
-    --primaer-groen: #013533;
-    --sekundaer-groen: #345D5C;
-    --guld: #F39200;
+  --primaer-hvid: #FFFFFF;
+  --primaer-sort: #000000;
+  --primaer-groen: #013533;
+  --sekundaer-groen: #345D5C;
+  --guld: #F39200;
 }
+
 body {
-    background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
-    margin: 0;
-    padding: 0;
-    font-family: "Sofia Sans Condensed", sans-serif;
+  background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 /* ----- Forside ----- */
@@ -37,9 +38,8 @@ body {
 }
 
 #london-bar-name {
-  text-align: center;
-  font-size: 2.5em;
-  color: #fff;
+  width: 200px; /* Scale down to 50% of its original width */
+  /* height: auto; */ /* Removed as it's not applicable */
 }
 
 #london-nav ul {
@@ -78,7 +78,6 @@ body {
 #london-welcome-title {
   font-size: 2em;
   background-color: var(--primaer-groen);  
-
 }
 
 .london-buttons {
@@ -97,17 +96,17 @@ body {
 
 #london-about-section, #london-packages-section {
   padding: 40px 20px;
-  text-align: left;
-  background-color: #345D5C; 
-   
+  text-align: right;
+  background-color: var(--sekundaer-groen); /* Changed to use the correct variable */
 }
 
 #london-package-1 {
-  background-color: var(--primaer-groen-groen); 
+  background-color: var(--primaer-groen); /* Fixed variable name */
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
   width: 80%;
+  text-align: center;
 }
 
 #london-footer {
@@ -136,6 +135,7 @@ body {
   color: #fff;
   cursor: pointer;
 }
-.img{
+
+.img {
   align-items: normal;
 }
