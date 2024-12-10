@@ -319,7 +319,7 @@ body {
 }
 
 .lost-items-section h1 {
-    color: #d4a853;
+    color: var(--guld);
     margin-bottom: 1rem;
 }
 
@@ -337,7 +337,7 @@ body {
 }
 
 .lost-items-form button {
-    background-color: #d4a853;
+    background-color: var(--guld);
     color: #1e3937;
     border: none;
     padding: 0.8rem;
