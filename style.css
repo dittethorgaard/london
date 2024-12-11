@@ -22,8 +22,6 @@ body {
   text-align: center;
 }
 
-
-
 /* ----- Fredagsbar ----- */
 .fredagsbar-section {
     padding: 2rem;
@@ -328,6 +326,11 @@ body {
   transition: background-color 0.3s;
 }
 
+.cta-knap a {
+  text-decoration: none;
+  color: var(--guld);
+}
+
 /* Course Types Section */
 .course-types {
   display: grid;
@@ -354,6 +357,7 @@ body {
   padding: 6rem 2rem 1rem;
   max-width: 87.5rem;
   margin: 0 auto;
+  display: flex;
 }
 
 .bordpakker-content {
@@ -382,10 +386,13 @@ body {
 }
 
 /* bordpakke slideshow */
+.drink-card {
+  flex: 1;
+}
+
 .drink-image {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
 .drink-image img {
@@ -398,23 +405,38 @@ body {
   color: var(--primaer-hvid);
 }
 
-.drink-title {
+#drink-name {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0.5rem 0;
 }
 
-.price {
+#price {
   font-size: 1.2rem;
   font-weight: medium;
+  margin: 0.5rem 0;
 }
 
-.quantity {
+#quantity {
   font-size: 1rem;
+  margin: 0.5rem 0;
 }
-.options {
+
+#options {
   font-size: 1rem;
-  font-weight: light;
-  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+#pitcher {
+  margin: 0.5rem 0;
+}
+#spiritus {
+  margin: 0.5rem 0;
+}
+#mixer {
+  margin: 0.5rem 0;
+}
+#pureshots {
+  margin: 0.5rem 0;
 }
 
 /* Navigationspillene */
@@ -433,7 +455,6 @@ body {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 4rem;
 }
@@ -457,6 +478,7 @@ body {
 
 .bordpakke img {
   border-radius: 1.5rem;
+  cursor: pointer;
 }
 
 .cta-knappen {
@@ -680,6 +702,7 @@ body {
 
 
 /* ----- Cocktail kursus ----- */
+/* Mobile str. L */
 @media (max-width: 425px) {
   .cocktail-content {
     flex-direction: column;
@@ -693,8 +716,12 @@ body {
 
 
 /* ----- Bordpakker ----- */
-
-
+/* Mobile str. L */
+@media (max-width: 425px){
+  .bordpakker-content {
+    flex-direction: column;
+  }
+}
 
 
 /* ----- Barkort ----- */
