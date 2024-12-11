@@ -1,4 +1,4 @@
-
+// GLEMTE SAGER
 document.addEventListener('DOMContentLoaded', function() {
     const packagesContainer = document.querySelector('.packages-container');
     let isScrolling = false;
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     alert("Tak for din henvendelse, vi tjekker vores glemte sager igennem og vender tilbage om 1-2 arbejdsdage");
 }
 
-
+// PRIVATE ARRANGEMENTER
 function openMenu(menuType) {
     const modal = document.getElementById('menuModal');
     const modalTitle = document.getElementById('modalTitle');
@@ -152,3 +152,4 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
