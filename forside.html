@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Bar</title>
     <link rel="stylesheet" href="forside.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.webp">
+    <script src="js/bp.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+        </style>
+</head></head>
 <body class="london-bar">
     <header id="london-header">
-        
-          <div class="container">
-            <img src="Images/londonlogo.png" class="logo" alt="Logo">
+        <div class="container">
             <nav id="london-nav">
-               
-               
-              <ul class="menu">
+                <ul class="menu">
+                    <img src="Images/londonlogo.png" class="logo" alt="Logo">
                     <li><a href="bordpakker.html" class="london-nav-item">Bordpakker</a></li>
                     <li><a href="sortiment.html" class="london-nav-item">Sortiment</a></li>
                     <li><a href="cocktailkursus.html" class="london-nav-item">Cocktail Kursus</a></li>
                     <li><a href="arrangementer.html" class="london-nav-item">Arrangementer</a></li>
                     <li><a href="glemtesager.html" class="london-nav-item">Glemte Sager</a></li>
-                    <li><a href="" class="london-book-btn">BOOK BORD</a></li>
+                    <li><a href="#" class="london-book-btn">BOOK BORD</a></li> <!-- Added href="#" for a placeholder link -->
                 </ul>
             </nav>
         </div>
     </header>
 
     <main id="london-main-content">
-        
         <section class="london-welcome" id="london-welcome-section">
             <h2 id="london-welcome-title">VELKOMMEN TIL LONDON BAR</h2>
             <div class="london-buttons" id="london-welcome-buttons">
@@ -39,30 +40,98 @@
 
         <section class="london-about" id="london-about-section">
             <h2 id="london-about-title">Om London Bar</h2>
+            <br>
             <p id="london-about-description">Er du til lækre cocktails og dansegulv for det voksne publikum, så er London bar i Aarhus stedet. Fokus på høj kvalitet, god service, hyggelig stemning og DJ der spiller den bedste blanding af nyt og gammelt.</p>
         </section>
 
-        <section class="london-packages" id="london-packages-section">
-            <h2 id="london-packages-title">BORDPAKKER</h2>
-            <p id="london-packages-description">Hvis du ved at I skal i byen, så husk at skrive i god tid og book et bord. Det er gratis at booke, men hvis man er for sent ude, så er der ikke noget vi kan gøre.</p>
-            <img src="Images/BP1.webp" class="image" alt="Bordpakke 1">
-            <div class="london-package" id="london-package-1">
-                <h3 id="london-package-title">BORDPAKKE 1</h3>
-                <p id="london-package-price">500 ,-</p>
-                <p id="london-package-details">2x Pitcher</p>
-                <p id="london-package-options">Vælg mellem: Gin Hass, Bramble, Passionada eller Fruity Safari</p>
-                <br>
-                <button class="london-book-btn">BOOK BORD</button>
+        <section class="bordpakker">
+            <div class="bordpakker-content">
+                <div class="bordpakker-text">
+                    <h1>BORDPAKKER PÅ LONDON BAR</h1>
+                    <p>Hvis I ved at i skal i byen, så husk at skrive i god tid og book et bord. Det er gratis at booke, men hvis man er for sent ude, så er der ikke noget vi kan gøre.</p>
+                    <p>Når man booker bord på forhånd er det også muligt at bestille en af vores bordpakker, hvor man kan sikre sig en endnu bedre pris på drikkevarer.</p>
+                    <p> </p>
+                    <div class="bordpakke-knap">
+                        <button class="bp-knap">BOOK BORD</button>
+                    </div>
+                </div>
+                
+                <!-- BORDPAKKE SLIDESHOW CONTAINER -->
+                <div class="drink-card">
+                    <div class="slideshow">
+                        <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                        <div class="drink-image">
+                            <img src="images/BP1.webp" alt="bordpakke 1">
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&gt;</a>
+                    </div>
+                    
+                    <div class="drink-info">
+                        <ul id="drink-name"></ul>
+                        <ul id="price"></ul>
+                        <ul id="quantity"></ul>
+                        <ul id="options"></ul>
+                        <ul id="pitcher"></ul>
+                        <ul id="spritus"></ul>
+                        <ul id="mixer"></ul>
+                        <ul id="pureshots"></ul>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="event-section">
+            <div class="event-card">
+                <img src="Images/fredagsbar.webp" alt="Fredagsbar">
+                <h3>FREDAGSBAR</h3>
+            </div>
+            <div class="event-card">
+                <img src="Images/bartender-mixer.webp" alt="Cocktail Kursus">
+                <h3>COCKTAIL KURSUS</h3>
+            </div>
+            <div class="event-card">
+                <img src="Images/private-arrangementer.webp" alt="Private Arrangementer">
+                <h3>PRIVATE ARRANGEMENTER</h3>
+            </div>
+        </section>
+        
     </main>
 
     <footer id="london-footer">
         <div class="container">
-            <h2 id="london-footer-title">London Bar</h2>
-            <p>Åbningstider: Fredag & Lørdag 20:00 - ???</p>
-            <p>Aldersgrænse: +25</p>
-            <p>Nyhedsbrev: <input type="email" placeholder="Email"><button>Tilmeld</button></p>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h2>London Bar</h2>
+                    <p>Åboulevarden 31, 8000 Aarhus</p>
+                    <p>Aarhus@londonbar.dk</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="/Images/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="/Images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="Images/we care.svg" alt="Other"></a>
+                        <a href="#"><img src="Images/kontrolsmiley.svg" alt="Other"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Åbningstider</h2>
+                    <p>Fredag & Lørdag: 20:00 - ???</p>
+                    <h2>Aldersgrænse</h2>
+                    <p>+25</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Nyhedsbrev</h2>
+                    <input type="email" placeholder="Email">
+                    <button>Tilmeld</button>
+                </div>
+            </div>
+            <br>
+            <div class="footer-bottom">
+                <p>© 2024 Copyright London Bar Aarhus</p>
+                <nav>
+                    <a href="#">Forretningsbetingelser</a>
+                    <a href="#">Cookiepolitik</a>
+                    <a href="#">Juridisk Enhed</a>
+                    <a href="#">Privatlivspolitik</a>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>
