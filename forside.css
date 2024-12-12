@@ -19,6 +19,24 @@ body {
   box-sizing: border-box;
 }
 
+
+
+.logo {
+  width: 150px; /* Scale down the logo to 50px width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 2px; /* Space between logo and menu */
+  align-items: left;
+}
+
+.menu {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for the menu items */
+}
+
+.menu li {
+  margin: 0 15px; /* Space between menu items */
+}
+
 .london-bar {
   font-family: 'Arial', sans-serif;
   color: #f0f0f0;
@@ -37,6 +55,9 @@ body {
 
 #london-bar-name {
   width: 200px;
+  margin: 0 auto;
+position: relative;
+  
 }
 
 #london-nav ul {
@@ -52,22 +73,22 @@ body {
 .london-nav-item {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.rem;
 }
 
 .london-book-btn {
-  background-color: #66a160;
+  background-color: var(--sekundaer-groen);
   padding: 10px 20px;
   border: none;
-  border-radius: 38px;
-  color: #fff;
+  border-radius: 15px;
+  color:var(--guld);
   cursor: pointer;
 }
 
 #london-welcome-section {
   text-align: center;
-  padding: 50px 0;
-  background-image: url('/path/to/your/background-image.jpg'); /* Add a background image */
+  padding: 300px 0;
+  background-image: url('Images/bartender-mixer.webp'); /* Add a background image */
   background-size: cover;
   color: #fff;
 }
@@ -77,12 +98,12 @@ body {
 }
 
 .london-button-item {
-  background-color: #66a160;
+  background-color: var(--primaer-groen);
   border: none;
   padding: 10px 15px;
   margin: 0 10px;
-  border-radius: 38px;
-  color: #fff;
+  border-radius: 30px;
+  color: var(--guld);
   cursor: pointer;
 }
 
@@ -98,15 +119,26 @@ body {
   margin: 20px auto;
   border-radius: 10px;
   width: 80%;
+  text-align: center;
 }
 
 #london-footer {
   background-color: #000;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
 }
 
 #london-footer-title {
   margin-bottom: 10px;
+}
+
+.image {
+  margin: 20px; /* Adjusts the space around the image */
+}
+.image {
+  position: relative; /* or absolute */
+  align-items: right;
+  top: 5px; /* Moves the image down */
+  left: 700px; /* Moves the image to the right */
 }
