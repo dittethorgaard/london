@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bordpakkeElements = document.querySelectorAll('.bordpakke');
     bordpakkeElements.forEach((element, index) => {
         const img = element.querySelector('img');
-        const btn = element.querySelector('.cta-knappen');
+        const btn = element.querySelector('.bp-knappen');
         
         // Tilføj klikbehandling for billed
         img.addEventListener('click', () => {
