@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bordpakke2: {
         drinkinfo: {
           Image: 'images/BP2.webp',
-          name: "BORDPAKKE 1",
+          name: "BORDPAKKE 2",
           price: "700,-",
           quantity: "1 Cocktail Pitchers, 1 Flaske Spiritus (0,7L), 2L Mixer",
           options: "Vælg mellem:",
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bordpakke3: {
         drinkinfo: {
           Image: 'images/BP3.webp',
-          name: "BORDPAKKE 1",
+          name: "BORDPAKKE 3",
           price: "1.600,-",
           quantity: "2 Cocktail Pitchers, 1 Flaske Spiritus (1,75L), 6L Mixer",
           options: "Vælg mellem:",
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bordpakke4: {
         drinkinfo: {
           Image: 'images/BP4.webp',
-          name: "BORDPAKKE 1",
+          name: "BORDPAKKE 4",
           price: "2.000,-",
           quantity: "2 Cocktail Pitchers, 2 Flasker Spiritus (0,7L), 4L Mixer, 1 Flaske Pure Shots (0,7L)",
           options: "Vælg mellem:",
@@ -86,6 +86,25 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSlide = ((currentSlide + n - 1 + totalSlides) % totalSlides) + 1;
         showSlide(currentSlide);
     }
+
+    // Tilføj klikbehandlere til nederste billeder og knapper
+    const bordpakkeElements = document.querySelectorAll('.bordpakke');
+    bordpakkeElements.forEach((element, index) => {
+        const img = element.querySelector('img');
+        const btn = element.querySelector('.bp-knappen');
+        
+        // Tilføj klikbehandling for billed
+        img.addEventListener('click', () => {
+            currentSlide = index + 1;
+            showSlide(currentSlide);
+        });
+        
+        // Tilføj klikbehandling for knap
+        btn.addEventListener('click', () => {
+            currentSlide = index + 1;
+            showSlide(currentSlide);
+        });
+    });
 
     showSlide(1);
 });
