@@ -1,18 +1,18 @@
 :root {
-    --primaer-hvid: #FFFFFF;
-    --primaer-sort: #000000;
-    --primaer-groen: #013533;
-    --sekundaer-groen: #345D5C;
-    --guld: #F39200;
-}
-body {
-    background-color: var(--primaer-groen); /* baggrundsfarven på selve body'en */
-    margin: 0;
-    padding: 0;
-    font-family: "Sofia Sans Condensed", sans-serif;
+  --primaer-hvid: #FFFFFF;
+  --primaer-sort: #000000;
+  --primaer-groen: #013533;
+  --sekundaer-groen: #345D5C;
+  --guld: #F39200;
 }
 
-/* ----- Forside ----- */
+body {
+  background-color: var(--primaer-groen);
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,6 @@ body {
 
 .london-bar {
   font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
   color: #f0f0f0;
 }
 
@@ -37,9 +36,7 @@ body {
 }
 
 #london-bar-name {
-  text-align: center;
-  font-size: 2.5em;
-  color: #fff;
+  width: 200px;
 }
 
 #london-nav ul {
@@ -70,15 +67,9 @@ body {
 #london-welcome-section {
   text-align: center;
   padding: 50px 0;
-  background-color: var(--primaer-groen);  
+  background-image: url('/path/to/your/background-image.jpg'); /* Add a background image */
   background-size: cover;
   color: #fff;
-}
-
-#london-welcome-title {
-  font-size: 2em;
-  background-color: var(--primaer-groen);  
-
 }
 
 .london-buttons {
@@ -98,12 +89,11 @@ body {
 #london-about-section, #london-packages-section {
   padding: 40px 20px;
   text-align: left;
-  background-color: #345D5C; 
-   
+  background-color: var(--sekundaer-groen);
 }
 
 #london-package-1 {
-  background-color: var(--primaer-groen-groen); 
+  background-color: var(--primaer-groen);
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
@@ -117,25 +107,6 @@ body {
   padding: 20px 0;
 }
 
-#london-newsletter-form {
-  margin-top: 20px;
-}
-
-#london-newsletter {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-#london-newsletter-form button {
-  background-color: #66a160;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-}
-.img{
-  align-items: normal;
+#london-footer-title {
+  margin-bottom: 10px;
 }
