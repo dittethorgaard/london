@@ -307,6 +307,7 @@ body {
 .cocktail-text h1 {
   color: var(--guld);
   font-size: 2.5rem;
+  margin-bottom: 1rem;
   font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
@@ -319,13 +320,13 @@ body {
   color: var(--guld);
   border: none;
   padding: 1rem 2rem;
-  font-weight: bold;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s;
   font-family: 'Sofia Sans Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 .cta-knap a {
@@ -380,11 +381,8 @@ body {
 .bordpakker-text h1 {
   color: var(--guld);
   font-size: 2.5rem;
+  margin-bottom: 1rem;
   font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-.bordpakker-text p {
-  margin: 0.5rem 0;
 }
 
 .bordpakke-knap {
