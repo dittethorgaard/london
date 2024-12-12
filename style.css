@@ -324,6 +324,8 @@ body {
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
 }
 
 .cta-knap a {
@@ -379,10 +381,18 @@ body {
   color: var(--guld);
   font-size: 2.5rem;
   font-family: 'Sofia Sans Condensed', sans-serif;
+
 }
 
-.bordpakker-text h2 {
-  font-size: 1.2rem;
+.bordpakker-text p {
+  margin: 0.5rem 0;
+}
+
+.bordpakke-knap {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0.5rem 0;
 }
 
 /* bordpakke slideshow */
@@ -390,73 +400,73 @@ body {
   flex: 1;
 }
 
+.slideshow {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
 .drink-image {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .drink-image img {
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 1.5rem;
-}
-
-.drink-info {
-  color: var(--primaer-hvid);
-}
-
-#drink-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-#price {
-  font-size: 1.2rem;
-  font-weight: medium;
-  margin: 0.5rem 0;
-}
-
-#quantity {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-#options {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-#pitcher {
-  margin: 0.5rem 0;
-}
-#spiritus {
-  margin: 0.5rem 0;
-}
-#mixer {
-  margin: 0.5rem 0;
-}
-#pureshots {
-  margin: 0.5rem 0;
 }
 
 /* Navigationspillene */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 45%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  position: relative;
+  display: inline-block;
+  color: var(--primaer-hvid);
   font-weight: bold;
   font-size: 2.5rem;
   transition: 0.6s ease;
-  border-radius: 0 0.8rem 0.8rem 0;
   user-select: none;
+  margin: auto;
 }
 
 .next {
-  right: 4rem;
+  right: auto;
+}
+
+.drink-info {
+  color: var(--primaer-hvid);
+  margin-top: 0.5rem;
+}
+
+#drink-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0.3rem;
+}
+#price {
+  font-size: 1.3rem;
+  font-weight: semi-bold;
+  margin: 0.3rem 0;
+}
+#quantity {
+  margin: 0.3rem 0;
+}
+#options {
+  margin: 0.3rem 0;
+}
+#pitcher {
+  margin: 0.3rem 0;
+}
+#spiritus {
+  margin: 0.3rem 0;
+}
+#mixer {
+  margin: 0.3rem 0;
+}
+#pureshots {
+  margin: 0.3rem 0;
 }
 
 /* Bordpakkerne oversigt Section */
@@ -491,6 +501,8 @@ body {
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.2rem;
 }
 
 
@@ -716,10 +728,29 @@ body {
 
 
 /* ----- Bordpakker ----- */
+/* Tablet */
+@media (max-width: 768px) {
+  .prev, .next {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .drink-image img {
+    width: 100%; /* Slightly smaller on mobile */
+  }
+}
+
 /* Mobile str. L */
 @media (max-width: 425px){
   .bordpakker-content {
     flex-direction: column;
+  }
+  .prev, .next {
+    font-size: 2rem;
+  }
+  
+  .drink-image img {
+    width: 100%; /* Slightly smaller on mobile */
   }
 }
 
