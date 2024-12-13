@@ -99,10 +99,14 @@ body {
 /* ----- Velkommen sektionen ----- */
 #london-welcome-section {
   text-align: center;
-  padding: 300px 0;
+  padding: 240px 0;
   background-image: url('Images/cocktail-cover.webp'); 
   background-size: cover;
   color: #fff;
+}
+
+#london-welcome-title {
+  font-size: 3rem;
 }
 
 /* ----- Knapper i velkommen sektionen ----- */
@@ -113,11 +117,17 @@ body {
 .london-button-item {
   background-color: var(--primaer-groen);
   border: none;
-  padding: 10px 15px;
+  padding: 18px 35px;
   margin: 0 10px;
-  border-radius: 30px;
+  border-radius: 20px;
   color: var(--guld);
   cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.london-button-item a {
+  text-decoration: none;
+  color: var(--guld);
 }
 
 /* ----- Om London Bar ----- */
