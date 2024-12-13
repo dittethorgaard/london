@@ -24,7 +24,8 @@ body {
 .logo {
   width: 100px; 
   height: auto; 
-  margin-right: 40px; 
+  margin-right: 30rem; 
+  Margin-left: 0;
 }
 
 /* ----- Menu ----- */
@@ -74,6 +75,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1rem; 
+
 }
 
 
