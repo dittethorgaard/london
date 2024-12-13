@@ -179,7 +179,7 @@ body {
   border-radius: 2rem; 
   
 }
-/* ------ footer ------ */
+
 
 /* ----- Footer ----- */
 footer {
@@ -885,6 +885,7 @@ button:hover {
     justify-content: center;
     gap: 2rem;
     padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .sortiment-item {
