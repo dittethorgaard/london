@@ -24,6 +24,8 @@ body {
 .logo {
   width: 100px; 
   height: auto; 
+  margin-right: auto; /* Skubber navigation til højre */
+  margin-left: -20px; /* Trækker logoet mere mod venstre */
 }
 
 /* ----- Menu ----- */
@@ -31,8 +33,9 @@ body {
   list-style: none; 
   display: flex;
   align-items: center;
+  justify-content: flex-end; /* Holder navigation til højre */
   width: 100%;
-  justify-content: flex-end; /* Skubber alt til højre */
+  padding: 0;
 }
 
 /* ----- Header & navigationsbaren ----- */
