@@ -24,23 +24,15 @@ body {
 .logo {
   width: 100px; 
   height: auto; 
-  margin-right: 30rem; 
-  Margin-left: 0;
 }
 
 /* ----- Menu ----- */
 .menu {
   list-style: none; 
-  display: flex; 
-}
-
-.menu li {
-  margin: 0 15px; 
-}
-
-.london-bar {
-  font-family: 'Arial', sans-serif;
-  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end; /* Skubber alt til højre */
 }
 
 /* ----- Header & navigationsbaren ----- */
@@ -55,27 +47,44 @@ body {
   margin: 0 auto;
 }
 
-#london-bar-name {
-  width: 200px;
-  margin: 0 auto;
-  position: relative;
+#london-nav {
+  width: 100%;
 }
 
 #london-nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-}
-
-#london-nav ul li {
-  margin: 0 15px;
+  align-items: center;
+  gap: 2rem;
 }
 
 .london-nav-item {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem; 
+  font-size: 1rem;
+  white-space: nowrap;
+}
 
+/* Styling for logo container */
+.menu img.logo {
+  margin-right: auto; /* Skubber alt andet til højre */
+}
+
+/* Styling for navigation links container */
+.menu li {
+  margin-left: 15px; /* Mellemrum mellem links */
+}
+
+/* Specifik styling for book-knappen */
+.london-book-btn {
+  background-color: var(--sekundaer-groen);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  color: var(--guld);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 
