@@ -125,6 +125,11 @@ body {
   font-size: 0.8rem;
 }
 
+.london-button-item a {
+  text-decoration: none;
+  color: var(--guld);
+}
+
 /* ----- Om London Bar ----- */
 .london-about {
   display: flex;
