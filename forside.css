@@ -311,10 +311,11 @@ body {
 /* ----- Footer ----- */
 
 #london-footer {
-  background-color: #000; 
-  color: #fff; 
+  background-color: var(--primaer-sort); 
+  color: var(--primaer-hvid); 
   padding: 20px 0;
   flex-wrap: nowrap;
+  margin: auto;
 }
 
 .container {
@@ -353,13 +354,12 @@ body {
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  background-color: var(--primaer-sort);
+  background-color: var(--primaer-groen);
 
 }
 
 .footer-bottom p {
   margin: 10px 0;
-  background-color: var(--primaer-sort);
 
 }
 
@@ -367,14 +367,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px; /* Space between links */
-  background-color: var(--primaer-sort);
-
 }
 
 .footer-bottom a {
-  color: #fff; /* White text for links */
+  color: var(--primaer-hvid); /* White text for links */
   text-decoration: none; /* Remove underline */
-  background-color: var(--primaer-sort);
 }
 
 .footer-bottom a:hover {
@@ -383,7 +380,7 @@ body {
 
 input[type="email"] {
   padding: 10px;
-  background-color: #013533;
+  background-color: var(--primaer-groen);
   border: none;
   border-radius: 38px;
   margin-right: 10px; /* Space between input and button */
@@ -391,7 +388,7 @@ input[type="email"] {
 
 button {
   padding: 10px 20px;
-  background-color: #013533; /* Adjust button color */
+  background-color: var(--primaer-groen); /* Adjust button color */
   color: #fff; /* White text */
   border: none;
   border-radius: 38px;
@@ -399,6 +396,6 @@ button {
 }
 
 button:hover {
-  background-color: #345D5C; /* Darker shade on hover */
+  background-color: var(--primaer-groen); /* Darker shade on hover */
 }
 
