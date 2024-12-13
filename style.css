@@ -318,7 +318,76 @@ body {
   
 }
 
+/* ----- Footer ----- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primaer-sort);
+  color: var(--primaer-hvid);
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
+footer h2 {
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-icons img {
+  width: 2rem;
+  height: auto;
+}
+
+input[type="email"] {
+  padding: 10px;
+  background-color: var(--sekundaer-groen);
+  border: none;
+  border-radius: 1rem;
+  margin-right: 0.6rem; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--primaer-groen); /* Adjust button color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primaer-groen); /* Darker shade on hover */
+}
+
+#footer-bottom {
+  background-color: var(--primaer-groen);
+  color: var(--primaer-hvid);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+#footer-bottom a {
+  text-decoration: none;
+  color: var(--primaer-hvid);
+  margin: auto;
+  padding: 0 2rem;
+}
+
+#footer-bottom-a {
+  text-decoration: none;
+  color: var(--primaer-hvid);
+  margin: 1rem;
+}
+
+#footer-bottom a:hover {
+  text-decoration: underline;
+}
 
 /* ----- Arrangementer ----- */
 #arrangementer-overskrift {
