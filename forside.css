@@ -119,10 +119,12 @@ body {
   padding: 40px 20px;
   text-align: center;
   background-color: var(--primaer-groen-groen);
-  color: var(--guld);
+  color: var(--primaer-hvid);
 }
 
-
+#london-about-title h2 {
+  color: var(--guld);
+}
 
 /* ----- Bordpakker ----- */
 .bordpakker {
@@ -284,14 +286,15 @@ body {
 
 .event-card h3 {
   position: absolute; 
-  bottom: 20px; 
+  bottom: 10px; 
   left: 50%; 
   transform: translateX(-50%); 
   color: #FFFFFF; 
   font-size: 1.5rem; 
   text-align: center; 
   padding: 10px; 
-  border-radius: 5px; 
+  border-radius: 2rem; 
+  
 }
 
 /* ----- Footer ----- */
