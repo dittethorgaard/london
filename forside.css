@@ -123,7 +123,7 @@ body {
 }
 
 /* ----- Om London Bar ----- */
-#london-about-section, #london-packages-section {
+.london-about {
   display: flex;
   flex-basis: 0;
   flex-direction: column;
@@ -131,9 +131,11 @@ body {
   text-align: center;
   background-color: var(--primaer-groen-groen);
   color: var(--primaer-hvid);
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
-#london-about-title h2 {
+.london-about-title h2 {
   color: var(--guld);
 }
 
