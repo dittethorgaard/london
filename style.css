@@ -45,33 +45,86 @@ header {
   align-items: center;  
   justify-content: center; } 
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;  
     gap: 1rem;  }
 }
 
+/* ----- Drop Down ----- */
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropbtn i {
+  visibility: hidden;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+  
+  
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+  
+  
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primaer-groen);
+  background-color: black;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;}
-
-
-.dropdown-content a:hover{
-  background-color: var(--sekundaer-groen);
-  color: var(--primaer-hvid);
+  z-index: 1;
 }
 
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--guld);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block
+  
+}
 
 .header-knap {
   background-color: var(--primaer-groen);
   color: var(--guld);
   border: none;
-  padding: 0 1.5rem;
-  border-radius: 1.25rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
   cursor: pointer;
   font-size: 0.8rem;
   margin: 1rem;
@@ -99,16 +152,60 @@ header {
 
 .london-button-item {
   background-color: var(--primaer-groen);
+  font-family: "Sofia Sans Condensed", sans-serif;
   border: none;
   padding: 1.125rem 2.1rem;
-  margin: 0 0.625;
+  margin: 0 0.8rem;
   border-radius: 1.25rem;
   color: var(--guld);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.london-button-item::before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  right: -1.875rem;
+  transform: translateY(-50%);
+  transition: right 0.3s ease;
+  opacity: 0;
+}
+
+.london-button-item:hover::before {
+  right: 0.625rem;
+  opacity: 1;
+  transform: translateY(-50%) scale(1.5);
+  transition: all 0.3s ease;
+}
+
+/* Specifik ikon for hver knap */
+.london-button-item[data-icon="cocktail"]::before {
+  background-image: url('images/cocktail-ami.webp');
+}
+
+.london-button-item[data-icon="bottle"]::before {
+  background-image: url('images/vodka-ami.webp');
+}
+
+.london-button-item[data-icon="package"]::before {
+  background-image: url('images/bordpakke-ami.webp');
+}
+
+.london-button-item:hover a {
+  transform: translateX(-0.5rem);
+  display: inline-block;
 }
 
 .london-button-item a {
+  transition: transform 0.3s ease;
   text-decoration: none;
   color: var(--guld);
 }
@@ -117,25 +214,24 @@ header {
 .london-about {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1.25rem;
+  padding: 1rem 0 0 0;
   text-align: center;
   background-color: var(--primaer-groen);
   color: var(--primaer-hvid);
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: -5rem;
+  max-width: 80rem;
+  margin: auto;
 }
 
 .london-about-title {
   color: var(--guld);
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .london-about-description {
   color: var(--primaer-hvid);
   line-height: 1.5;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 /* ----- Begivenheder ----- */
@@ -187,6 +283,7 @@ footer {
   margin: auto;
   padding: 1rem 2.5rem;
   line-height: 0.5;
+  margin: 2.5rem 0 0 0;
 }
 
 footer h2 {
@@ -260,7 +357,7 @@ footer h2 {
 
 /* ----- Fredagsbar ----- */
 .fredagsbar-section {
-    padding: 2rem;
+    padding: 2.5rem;
     max-width: 87.5rem;
     margin: 0 auto;
 }
@@ -316,9 +413,9 @@ footer h2 {
 
 /* ----- Privat Arrangementer ----- */
 .private-section {
-    padding: 2rem;
-    max-width: 87.5rem;
-    margin: 0 auto;
+  padding: 2.5rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
 }
 
 .private-content {
@@ -593,9 +690,9 @@ footer h2 {
 /* ----- Cocktail kursus ----- */
 /* Cocktail Section */
 .cocktail {
-  padding: 6rem 2rem 1rem;
+  padding: 2.5rem;
   max-width: 87.5rem;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .cocktail-content {
@@ -676,10 +773,9 @@ footer h2 {
 
 /* ----- Bordpakker ----- */
 .bordpakker {
-  padding: 5rem 2rem 1rem;
+  padding: 2.5rem;
   max-width: 87.5rem;
   margin: 0 auto;
-  display: flex;
 }
 
 .bordpakker-content {
@@ -813,7 +909,7 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 0 2.5rem;
   max-width: 87.5rem;
   margin: 0 auto;
 }
@@ -864,7 +960,7 @@ footer h2 {
 .barkort-billed img {
     width: 35rem;
     height: auto;
-    border-radius: 1.4rem; /* Afrundet hjørner */
+    border-radius: 1.5rem; /* Afrundet hjørner */
 }
 
 
@@ -887,7 +983,7 @@ footer h2 {
 .flaskekort-billed img {
     width: 35rem;
     height: auto;
-    border-radius: 0.7rem; /* Afrundet hjørner */
+    border-radius: 1.5rem; /* Afrundet hjørner */
 }
 
 

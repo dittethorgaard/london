@@ -17,34 +17,39 @@
             <a href="forside.html"><img src="images/Logo.webp" alt="logo"></a></div>
         <div class="navbar">
             <a href="bordpakker.html">Bordpakker</a>
-            <a href="sortiment.html">Sortiment 
-                <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="barkort.html">Barkort</a>
-                    <a href="flaskekort.html">Flaskekort</a>
-                    <a href="bordpakker.html">Bordpakker</a>
+                <div class="dropdown">
+                    <a href="sortiment.html" class="dropbtn"> Sortiment <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="barkort.html">Barkort</a>
+                        <a href="flaskekort.html">Flaskekort</a>
+                        <a href="bordpakker.html">Bordpakker</a>
+                    </div>
                 </div>
-            <a href="cocktailkursus.html">Cocktail Kursus</a>
-            <a href="arrangementer.html">Arrangementer</a>
-                <div class="dropdown-content">
-                    <a href="fredagsbar.html">Fredagsbar</a>
-                    <a href="cocktailkursus.html">Cocktail Kursus</a>
-                    <a href="privatearrangementer.html">Private Arrangementer</a>
+                <a href="cocktailkursus.html">Cocktail Kursus</a>
+                <div class="dropdown">
+                    <a href="arrangementer.html" class="dropbtn">Arrangementer <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="fredagsbar.html">Fredagsbar</a>
+                        <a href="cocktailkursus.html">Cocktail Kursus</a>
+                        <a href="privatearrangementer.html">Private Arrangementer</a>
+                    </div>
                 </div>
             <a href="glemtesager.html">Glemte Sager</a>
 
             <button class="header-knap">BOOK BORD</button>
         </div>
-    
     </header>
 
     <main id="london-main-content">
         <section class="london-welcome" id="london-welcome-section">
             <h2 id="london-welcome-title">VELKOMMEN TIL LONDON BAR</h2>
             <div class="london-buttons" id="london-welcome-buttons">
-                <button class="london-button-item"><a href="barkort.html">BARKORT</a></button>
-                <button class="london-button-item"><a href="flaskekort.html">FLASKEKORT</a></button>
-                <button class="london-button-item"><a href="bordpakker.html">BORDPAKKER</a></button>
+                
+                <button class="london-button-item" data-icon="cocktail"><a href="barkort.html">BARKORT</a></button>
+                
+                <button class="london-button-item" data-icon="bottle"><a href="flaskekort.html">FLASKEKORT</a></button>
+                
+                <button class="london-button-item" data-icon="package"><a href="bordpakker.html">BORDPAKKER</a></button>
             </div>
         </section>
 
@@ -68,7 +73,7 @@
                     <p>Når man booker bord på forhånd er det også muligt at bestille en af vores bordpakker, hvor man kan sikre sig en endnu bedre pris på drikkevarer.</p>
                     <p> </p>
                     <div class="bordpakke-knap">
-                        <button class="bp-knap">BOOK BORD</button>
+                    <button class="bp-knap">BOOK BORD</button>
                     </div>
                 </div>
                 
