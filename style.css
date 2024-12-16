@@ -13,88 +13,36 @@ body {
     font-family: "Sofia Sans Condensed", sans-serif;
 }
 
-/* ------- Forside --------*/
+/* ------- Forside -------- */
 
-/* ----- Logo ----- */
-.logo {
-  width: 100px; 
-  height: auto; 
-  margin-right: auto; /* Skubber navigation til højre */
-  margin-left: -20px; /* Trækker logoet mere mod venstre */
-}
-
-/* ----- Menu ----- */
-.menu {
-  list-style: none; 
+/* ------- header -------- */
+header {
+  background-color: var(--primaer-sort);
+  color: var(--primaer-hvid);
   display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Holder navigation til højre */
-  width: 100%;
-  padding: 0;
+  justify-content: space-between;
+  margin: auto;
 }
 
-/* ----- Header & navigationsbaren ----- */
-#london-header {
-  background-color: #000;
-  padding: 20px 0;
+#logo {
+  width: 6rem;
+  height: auto;
+  margin-left: 2rem;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#london-nav {
-  width: 100%;
-}
-
-#london-nav ul {
-  list-style: none;
+.navbar {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   gap: 2rem;
 }
 
-.london-nav-item {
-  color: #fff;
+.nav-bar a {
   text-decoration: none;
-  font-size: 1rem;
-  white-space: nowrap;
-}
-
-/* Styling for logo container */
-.menu img.logo {
-  margin-right: auto; /* Skubber alt andet til højre */
-}
-
-/* Styling for navigation links container */
-.menu li {
-  margin-left: 15px; /* Mellemrum mellem links */
-}
-
-/* Specifik styling for book-knappen */
-.london-book-btn {
-  background-color: var(--sekundaer-groen);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 15px;
-  color: var(--guld);
-  cursor: pointer;
-  text-decoration: none;
-  white-space: nowrap;
+  color: var(--primaer-hvid);
 }
 
 
-/* ----- CTA knap til bookning af bord ----- */
-.london-book-btn {
-  background-color: var(--sekundaer-groen);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 15px;
-  color: var(--guld);
-  cursor: pointer;
-}
+
 
 /* ----- Velkommen sektionen ----- */
 #london-welcome-section {
@@ -149,7 +97,7 @@ body {
   margin-bottom: 2rem;
 }
 
-#london-about-description {
+.london-about-description {
   color: var(--primaer-hvid);
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -223,7 +171,7 @@ input[type="email"] {
   margin-right: 0.6rem; 
 }
 
-button {
+.nb-knap {
   padding: 10px 20px;
   background-color: var(--primaer-groen); /* Adjust button color */
   color: #fff; /* White text */
@@ -232,7 +180,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.nb-knap:hover {
   background-color: var(--primaer-groen); /* Darker shade on hover */
 }
 

@@ -11,21 +11,29 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
         </style>
 </head>
-<body class="london-bar">
-    <header id="london-header">
-        <div class="container">
-            <nav id="london-nav">
-                <ul class="menu">
-                    <a href="forside.html"><img src="Images/londonlogo.png" class="logo" alt="Logo"></a>
-                    <li><a href="bordpakker.html" class="london-nav-item">Bordpakker</a></li>
-                    <li><a href="sortiment.html" class="london-nav-item">Sortiment</a></li>
-                    <li><a href="cocktailkursus.html" class="london-nav-item">Cocktail Kursus</a></li>
-                    <li><a href="arrangementer.html" class="london-nav-item">Arrangementer</a></li>
-                    <li><a href="glemtesager.html" class="london-nav-item">Glemte Sager</a></li>
-                    <li><a href="#" class="london-book-btn">BOOK BORD</a></li> <!-- Added href="#" for a placeholder link -->
-                </ul>
-            </nav>
+<body>
+    <header>
+        <div id="logo"><img src="images/Logo.webp" alt="logo"></div>
+        <div class="navbar">
+            <a href="bordpakker.html">Bordpakker</a>
+            <a href="sortiment.html">Sortiment 
+                <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="barkort.html">Barkort</a>
+                    <a href="flaskekort.html">Flaskekort</a>
+                    <a href="bordpakker.html">Bordpakker</a>
+                </div>
+            <a href="cocktailkursus.html">Cocktail Kursus</a>
+            <a href="arrangementer.html">Arrangementer</a>
+                <div class="dropdown-content">
+                    <a href="fredagsbar.html">Fredagsbar</a>
+                    <a href="cocktailkursus.html">Cocktail Kursus</a>
+                    <a href="privatearrangementer.html">Private Arrangementer</a>
+                </div>
+            <a href="glemtesager.html">Glemte Sager</a>
+            <button>BOOK BORD</button>
         </div>
+    
     </header>
 
     <main id="london-main-content">
@@ -41,13 +49,13 @@
         <section class="london-about">
             <h2 class="london-about-title">Om London Bar</h2>
             
-            <p id="london-about-description">London Bar er en mangfoldig cocktail- og dansebar, der går op i at skabe en festlig stemning for alle over 25. Du kan finde os ved åen i Aarhus, hvor vi hver fredag og lørdag slår dørene op med happy hour indtil klokken 23.</p> 
+            <p class="london-about-description">London Bar er en mangfoldig cocktail- og dansebar, der går op i at skabe en festlig stemning for alle over 25. Du kan finde os ved åen i Aarhus, hvor vi hver fredag og lørdag slår dørene op med happy hour indtil klokken 23.</p> 
             <br>
-            <p id="london-about-description">På London Bar stræber vi efter at skabe en hyggelig atmosfære, hvor i kan komme og nyde gode cocktails i godt selskab i de tidlige timer, og få en svingom på dansegulvet i de sene timer. Når musikken spiller er der meget få begrænsninger for, hvad man ikke må, stå endelig op i sofaerne, dans og syng med for fulde drøn, og hav en fest du sent vil glemme.</p> 
+            <p class="london-about-description">På London Bar stræber vi efter at skabe en hyggelig atmosfære, hvor i kan komme og nyde gode cocktails i godt selskab i de tidlige timer, og få en svingom på dansegulvet i de sene timer. Når musikken spiller er der meget få begrænsninger for, hvad man ikke må, stå endelig op i sofaerne, dans og syng med for fulde drøn, og hav en fest du sent vil glemme.</p> 
             <br>
-            <p id="london-about-description">Alle vores cocktails laver vi fra bunden af, og vi sætter en dyd i at sikre en god og velsmagende oplevelse. Derfor lærer vi selv vores bartendere op, og hvis man har specielle ønsker til sin cocktail skal man bare spørge, så vil vi gøre alt for at imødekomme disse.</p>
+            <p class="london-about-description">Alle vores cocktails laver vi fra bunden af, og vi sætter en dyd i at sikre en god og velsmagende oplevelse. Derfor lærer vi selv vores bartendere op, og hvis man har specielle ønsker til sin cocktail skal man bare spørge, så vil vi gøre alt for at imødekomme disse.</p>
             <br>
-            <p id="london-about-description">Musikken, vi spiller er for alle. Det er en god blanding af nyt og gammelt, med en god omgang sing-along ind imellem. Så hvis du vil mindes de lidt yngre, men også danse med til noget af det helt nye, så kom ned til en svingom på London Bar.</p>
+            <p class="london-about-description">Musikken, vi spiller er for alle. Det er en god blanding af nyt og gammelt, med en god omgang sing-along ind imellem. Så hvis du vil mindes de lidt yngre, men også danse med til noget af det helt nye, så kom ned til en svingom på London Bar.</p>
         </section>
 
         <section class="bordpakker">
@@ -123,7 +131,7 @@
         <div>
             <h2>Nyhedsbrev</h2>
             <input id=forside-email type="email" placeholder="Email">
-            <button>Tilmeld</button>
+            <button class="nb-knap">Tilmeld</button>
         </div>
     </footer>
     <div id="footer-bottom">
