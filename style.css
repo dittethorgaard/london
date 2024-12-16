@@ -60,10 +60,17 @@ header {
   padding: 14px 16px;
   text-decoration: none;
 }
+.dropbtn i {
+  visibility: hidden;
+  
+}
 
 .dropdown {
   float: left;
   overflow: hidden;
+  
+  
+  
 }
 
 .dropdown .dropbtn {
@@ -75,12 +82,15 @@ header {
   font-family: inherit;
   margin: 0;
   cursor: pointer;
+  
+  
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
   background-color: black;
   color: white;
 }
+
 
 .dropdown-content {
   display: none;
@@ -106,6 +116,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .dropdown:hover .dropdown-content {
   display: block
+  
 }
 
 .header-knap {
