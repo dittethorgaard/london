@@ -152,16 +152,58 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .london-button-item {
   background-color: var(--primaer-groen);
+  font-family: "Sofia Sans Condensed", sans-serif;
   border: none;
   padding: 1.125rem 2.1rem;
-  margin: 0 0.625;
+  margin: 0 0.8rem;
   border-radius: 1.25rem;
   color: var(--guld);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.london-button-item::before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  right: -1.875rem;
+  transform: translateY(-50%);
+  transition: right 0.3s ease;
+  opacity: 0;
+}
+
+.london-button-item:hover::before {
+  right: 0.625rem;
+  opacity: 1;
+}
+
+/* Specifik ikon for hver knap */
+.london-button-item[data-icon="cocktail"]::before {
+  background-image: url('images/cocktail-ami.webp');
+}
+
+.london-button-item[data-icon="bottle"]::before {
+  background-image: url('images/vodka-ami.webp');
+}
+
+.london-button-item[data-icon="package"]::before {
+  background-image: url('images/bordpakke-ami.webp');
+}
+
+.london-button-item:hover a {
+  transform: translateX(-0.5rem);
+  display: inline-block;
 }
 
 .london-button-item a {
+  transition: transform 0.3s ease;
   text-decoration: none;
   color: var(--guld);
 }
