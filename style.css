@@ -45,13 +45,13 @@ header {
   align-items: center;  
   justify-content: center; } 
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;  
     gap: 1rem;  }
 }
 
+/* ----- Drop Down ----- */
 .nav a {
   float: left;
   display: block;
