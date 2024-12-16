@@ -165,12 +165,18 @@ header {
 
 /* ----- Footer ----- */
 footer {
-  display: flex;
-  justify-content: space-around;
   background-color: var(--primaer-sort);
   color: var(--primaer-hvid);
+  font-family: "Montserrat", sans-serif;
+}
+
+.primaer-footer {
+  max-width: 87.5rem;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
+  line-height: 0.5;
 }
 
 footer h2 {
@@ -187,8 +193,8 @@ footer h2 {
   height: auto;
 }
 
-input[type="email"] {
-  padding: 10px;
+#forside-email {
+  padding: 0.625rem;
   background-color: var(--sekundaer-groen);
   border: none;
   border-radius: 1.25rem;
@@ -196,16 +202,16 @@ input[type="email"] {
 }
 
 .nb-knap {
-  padding: 10px 20px;
-  background-color: var(--primaer-groen); /* Adjust button color */
-  color: #fff; /* White text */
+  padding: 0.625rem 1.25rem;
+  background-color: var(--primaer-groen); 
+  color: var(--primaer-hvid); 
   border: none;
   border-radius: 1.25rem;
   cursor: pointer;
 }
 
 .nb-knap:hover {
-  background-color: var(--primaer-groen); /* Darker shade on hover */
+  background-color: var(--primaer-groen);
 }
 
 #footer-bottom {
@@ -214,6 +220,7 @@ input[type="email"] {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  max-width: 87.5rem;
 }
 
 #footer-bottom a {
@@ -795,7 +802,7 @@ input[type="email"] {
 /* ----- Glemtesager ----- */
 .glemtesager {
     font-family: "Sofia Sans Condensed", sans-serif;
-    color: white;
+    color: var(--primaer-hvid);
     margin: 0;
     padding: 0;
     display: flex;
@@ -805,10 +812,10 @@ input[type="email"] {
 }
 
 .lost-items-section {
-    max-width: 600px;
+    max-width: 37.5rem;
     padding: 2rem;
     background-color: var(--sekundaer-groen);
-    border-radius: 10px;
+    border-radius: 1.25rem;
     text-align: center;
 }
 
@@ -824,6 +831,7 @@ input[type="email"] {
 }
 
 .lost-items-form input {
+    font-family: "Sofia Sans Condensed", sans-serif;
     padding: 0.8rem;
     border: none;
     border-radius: 5px;
@@ -831,6 +839,7 @@ input[type="email"] {
 }
 
 .lost-items-form button {
+    font-family: "Sofia Sans Condensed", sans-serif;
     background-color: var(--guld);
     color: #1e3937;
     border: none;
