@@ -57,18 +57,19 @@ header {
 }
 
 
-
 .header-knap {
   background-color: var(--primaer-groen);
   color: var(--guld);
   border: none;
-  padding: 1.125rem 2.1rem;
+  padding: 0 1.5rem;
   border-radius: 1.25rem;
   cursor: pointer;
   font-size: 0.8rem;
-  margin-top: 1rem;
+  margin: 1rem;
   transition: background-color 0.3s;
 }
+
+
 /* ----- Velkommen sektionen ----- */
 #london-welcome-section {
   text-align: center;
