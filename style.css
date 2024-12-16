@@ -484,7 +484,7 @@ footer h2 {
 }
 
 .carousel-slide.active {
-    display: block;
+  display: block;
 }
 
 .menu-card {
@@ -497,8 +497,6 @@ footer h2 {
     color: var(--primaer-hvid);
     position: relative;
     min-height: 300px;
-    margin: 0 auto;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1128,6 +1126,57 @@ footer h2 {
 }
 
 
+/* Opdater carousel-slide styling */
+.carousel-slide {
+  display: none;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+/* Tilføj denne media query */
+@media (max-width: 1023px) {
+  .carousel-container {
+      position: relative;
+  }
+  
+  .carousel-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+  
+  .carousel-slide.active {
+      opacity: 1;
+      position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-container {
+      display: flex;
+      overflow: visible;
+      gap: 2rem;
+  }
+  
+  .carousel-slide {
+      display: block;
+      flex: 1;
+      opacity: 1;
+  }
+  
+  .carousel-btn, .carousel-dots {
+      display: none;
+  }
+}
+
+
 /* ----- Privat Arrangementer ----- */
 @media (max-width: 768px) {
     .private-content {
@@ -1299,55 +1348,5 @@ footer h2 {
     .sortiment-item {
         width: 100%;
         max-width: auto;
-    }
-}
-
-/* Opdater carousel-slide styling */
-.carousel-slide {
-    display: none;
-    width: 100%;
-    transition: transform 0.5s ease;
-}
-
-.carousel-slide.active {
-    display: block;
-}
-
-/* Tilføj denne media query */
-@media (max-width: 1023px) {
-    .carousel-container {
-        position: relative;
-    }
-    
-    .carousel-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-    
-    .carousel-slide.active {
-        opacity: 1;
-        position: relative;
-    }
-}
-
-@media (min-width: 1024px) {
-    .carousel-container {
-        display: flex;
-        overflow: visible;
-        gap: 2rem;
-    }
-    
-    .carousel-slide {
-        display: block;
-        flex: 1;
-        opacity: 1;
-    }
-    
-    .carousel-btn, .carousel-dots {
-        display: none;
     }
 }

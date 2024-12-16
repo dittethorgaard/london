@@ -59,22 +59,42 @@
         </div>
     </div>
 
-    <div class="menu-cards">
-        <div class="menu-card tapas">
-            <h2>TAPAS</h2>
-            <br>
-            <p>Fra 250,- pr. person</p>
-            <button class="menu-button" onclick="openMenu('tapas')">SE MENU</button>
+    <div class="package-carousel">
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="menu-card">
+                    <h2>TAPAS</h2>
+                    <br>
+                    <p>Fra 250,- pr. person</p>
+                    <button class="menu-button" onclick="openMenu('tapas')">SE MENU</button>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="menu-card">
+                    <h2>STANDARD<br>BUFFET</h2>
+                    <p>Fra 275,- pr. person</p>
+                    <button class="menu-button" onclick="openMenu('standard')">SE MENU</button>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="menu-card">
+                    <h2>LUKSUS<br>BUFFET</h2>
+                    <p>Fra 375,- pr. person</p>
+                    <button class="menu-button" onclick="openMenu('luksus')">SE MENU</button>
+                </div>
+            </div>
         </div>
-        <div class="menu-card standard">
-            <h2>STANDARD<br>BUFFET</h2>
-            <p>Fra 275,- pr. person</p>
-            <button class="menu-button" onclick="openMenu('standard')">SE MENU</button>
-        </div>
-        <div class="menu-card luksus">
-            <h2>LUKSUS<br>BUFFET</h2>
-            <p>Fra 375,- pr. person</p>
-            <button class="menu-button" onclick="openMenu('luksus')">SE MENU</button>
+        
+        <button class="carousel-btn next-btn">&#10095;</button>
+        
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </div>
 
