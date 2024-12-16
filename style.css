@@ -13,6 +13,11 @@ body {
     font-family: "Sofia Sans Condensed", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primaer-hvid)
+}
+
 /* ------- Forside -------- */
 
 /* ------- header -------- */
@@ -24,8 +29,8 @@ header {
   margin: auto;
 }
 
-#logo {
-  width: 6rem;
+#logo img{
+  width: 10rem;
   height: auto;
   margin-left: 2rem;
 }
@@ -34,16 +39,23 @@ header {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  float: right;
+  font-family: "Montserrat", sans-serif;
 }
 
-.nav-bar a {
-  text-decoration: none;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primaer-groen);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a:hover{
+  background-color: var(--sekundaer-groen);
   color: var(--primaer-hvid);
 }
-
-
-
-
 /* ----- Velkommen sektionen ----- */
 #london-welcome-section {
   text-align: center;
