@@ -38,9 +38,10 @@ header {
 .navbar {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  float: right;
+  gap: 3rem;
   font-family: "Montserrat", sans-serif;
+  align-items: center;  
+  justify-content: center;  
 }
 
 .dropdown-content {
