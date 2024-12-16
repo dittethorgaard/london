@@ -158,14 +158,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const dots = document.querySelectorAll('.dot');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
+    
+    if (!slides.length) return; // Afslut hvis der ikke er slides
+    
     let currentSlide = 0;
     let autoSlideInterval;
 
+    // Vis første slide ved start
+    showSlide(0);
+
     function showSlide(n) {
+        // Fjern active class fra alle slides og dots
         slides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
         
+        // Beregn det aktuelle slide-nummer
         currentSlide = (n + slides.length) % slides.length;
+        
+        // Tilføj active class til det aktuelle slide og dot
         slides[currentSlide].classList.add('active');
         dots[currentSlide].classList.add('active');
     }
@@ -179,15 +189,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event listeners
-    prevBtn?.addEventListener('click', () => {
-        prevSlide();
-        resetAutoSlide();
-    });
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
 
-    nextBtn?.addEventListener('click', () => {
-        nextSlide();
-        resetAutoSlide();
-    });
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+    }
 
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
@@ -206,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Start karrusellen
-    showSlide(0);
     startAutoSlide();
 });
 
