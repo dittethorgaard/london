@@ -1126,42 +1126,4 @@ footer h2 {
         margin-bottom: 1.5rem;
     }
 
-    .lost-items-form {
-        gap: 0.8rem;
-    }
-
-    .lost-items-form input {
-        padding: 0.7rem;
-        font-size: 0.9rem;
-    }
-
-    .lost-items-form button {
-        padding: 0.8rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* ----- Sortiment ----- */
-
-@media (max-width: 1024px) {
-    .sortiment-grid {
-        gap: 1.5rem;
-    }
-    
-    .sortiment-item {
-        width: 19rem;
-        height: 18rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .sortiment-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .sortiment-item {
-        width: 100%;
-        max-width: auto;
-    }
-}
+    .lost-it
