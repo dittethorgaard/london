@@ -218,6 +218,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Start karrusellen
+    // Start med at vise første slide og start automatisk skift
+    showSlide(0);
     startAutoSlide();
 });
 

@@ -474,14 +474,13 @@ footer h2 {
 }
 
 .carousel-container {
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-slide {
     display: none;
     width: 100%;
-    transition: transform 0.5s ease;
 }
 
 .carousel-slide.active {
