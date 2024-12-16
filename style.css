@@ -214,25 +214,24 @@ nav a:hover, .dropdown:hover .dropbtn {
 .london-about {
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 1.25rem;
+  padding: 1rem 0 0 0;
   text-align: center;
   background-color: var(--primaer-groen);
   color: var(--primaer-hvid);
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: -5rem;
+  max-width: 80rem;
+  margin: auto;
 }
 
 .london-about-title {
   color: var(--guld);
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .london-about-description {
   color: var(--primaer-hvid);
   line-height: 1.5;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 /* ----- Begivenheder ----- */
@@ -284,6 +283,7 @@ footer {
   margin: auto;
   padding: 1rem 2.5rem;
   line-height: 0.5;
+  margin: 2.5rem 0 0 0;
 }
 
 footer h2 {
@@ -357,7 +357,7 @@ footer h2 {
 
 /* ----- Fredagsbar ----- */
 .fredagsbar-section {
-    padding: 2rem;
+    padding: 2.5rem;
     max-width: 87.5rem;
     margin: 0 auto;
 }
@@ -413,9 +413,9 @@ footer h2 {
 
 /* ----- Privat Arrangementer ----- */
 .private-section {
-    padding: 2rem;
-    max-width: 87.5rem;
-    margin: 0 auto;
+  padding: 2.5rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
 }
 
 .private-content {
@@ -607,9 +607,9 @@ footer h2 {
 /* ----- Cocktail kursus ----- */
 /* Cocktail Section */
 .cocktail {
-  padding: 6rem 2rem 1rem;
+  padding: 2.5rem;
   max-width: 87.5rem;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .cocktail-content {
@@ -690,10 +690,9 @@ footer h2 {
 
 /* ----- Bordpakker ----- */
 .bordpakker {
-  padding: 5rem 2rem 1rem;
+  padding: 2.5rem;
   max-width: 87.5rem;
   margin: 0 auto;
-  display: flex;
 }
 
 .bordpakker-content {
@@ -827,7 +826,7 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 0 2.5rem;
   max-width: 87.5rem;
   margin: 0 auto;
 }
@@ -878,7 +877,7 @@ footer h2 {
 .barkort-billed img {
     width: 35rem;
     height: auto;
-    border-radius: 1.4rem; /* Afrundet hjørner */
+    border-radius: 1.5rem; /* Afrundet hjørner */
 }
 
 
@@ -901,7 +900,7 @@ footer h2 {
 .flaskekort-billed img {
     width: 35rem;
     height: auto;
-    border-radius: 0.7rem; /* Afrundet hjørner */
+    border-radius: 1.5rem; /* Afrundet hjørner */
 }
 
 
