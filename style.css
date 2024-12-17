@@ -35,7 +35,6 @@ header {
   margin-left: 2rem;
 }
 
-/* path/to/your/file.css */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -43,47 +42,27 @@ header {
   
   font-family: "Montserrat", sans-serif;
   align-items: center;  
-  justify-content: center; } 
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;  
-    gap: 1rem;  }
-}
+  justify-content: center; 
+} 
 
 /* ----- Drop Down ----- */
-.nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 .dropbtn i {
   visibility: hidden;
-  
 }
 
 .dropdown {
   float: left;
   overflow: hidden;
-  
-  
-  
 }
 
 .dropdown .dropbtn {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   cursor: pointer;
-  
-  
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
@@ -116,7 +95,6 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .dropdown:hover .dropdown-content {
   display: block
-  
 }
 
 .header-knap {
@@ -131,143 +109,17 @@ nav a:hover, .dropdown:hover .dropbtn {
   transition: background-color 0.3s;
 }
 
-
-/* ----- Velkommen sektionen ----- */
-#london-welcome-section {
-  text-align: center;
-  padding: 15rem 0;
-  background-image: url('Images/cocktail-cover.webp'); 
-  background-size: cover;
-  color: var(--primaer-hvid);
+/* --- Burgermenu --- */
+.burgermenu-container {
+ display: none;
 }
 
-#london-welcome-title {
-  font-size: 3rem;
-}
-
-/* ----- Knapper i velkommen sektionen ----- */
-.london-buttons {
-  margin-top: 1.25rem;
-}
-
-.london-button-item {
+.burgermenu {
+  width: 2.1rem;
+  height: 0.3rem;
   background-color: var(--primaer-groen);
-  font-family: "Sofia Sans Condensed", sans-serif;
-  border: none;
-  padding: 1.125rem 2.1rem;
-  margin: 0 0.8rem;
-  border-radius: 1.25rem;
-  color: var(--guld);
-  cursor: pointer;
-  font-size: 1.3rem;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  margin: 0.375rem 0;
 }
-
-.london-button-item::before {
-  content: '';
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 50%;
-  right: -1.875rem;
-  transform: translateY(-50%);
-  transition: right 0.3s ease;
-  opacity: 0;
-}
-
-.london-button-item:hover::before {
-  right: 0.625rem;
-  opacity: 1;
-  transform: translateY(-50%) scale(1.5);
-  transition: all 0.3s ease;
-}
-
-/* Specifik ikon for hver knap */
-.london-button-item[data-icon="cocktail"]::before {
-  background-image: url('images/cocktail-ami.webp');
-}
-
-.london-button-item[data-icon="bottle"]::before {
-  background-image: url('images/vodka-ami.webp');
-}
-
-.london-button-item[data-icon="package"]::before {
-  background-image: url('images/bordpakke-ami.webp');
-}
-
-.london-button-item:hover a {
-  transform: translateX(-0.5rem);
-  display: inline-block;
-}
-
-.london-button-item a {
-  transition: transform 0.3s ease;
-  text-decoration: none;
-  color: var(--guld);
-}
-
-/* ----- Om London Bar ----- */
-.london-about {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0 0 0;
-  text-align: center;
-  background-color: var(--primaer-groen);
-  color: var(--primaer-hvid);
-  max-width: 80rem;
-  margin: auto;
-}
-
-.london-about-title {
-  color: var(--guld);
-  font-size: 2.5rem;
-  margin: 1rem 0;
-}
-
-.london-about-description {
-  color: var(--primaer-hvid);
-  line-height: 1.5;
-  margin: 0.5rem 0;
-}
-
-/* ----- Begivenheder ----- */
-
-.event-section {
-  display: flex;
-  justify-content: space-around; /* Space between cards */
-  padding: 2.5rem 1.25rem;; /* Padding around the section */
-}
-
-.event-card {
-  position: relative; /* Position for absolute text */
-  width: 30%; /* Width of each card */
-  border-radius: 1.25rem; /* Rounded corners */
-  overflow: hidden; /* Hide overflow */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-}
-
-.event-card img {
-  width: 100%; /* Full width of the card */
-  height: 100%; /* Full height of the card */
-  object-fit: cover; /* Cover the box while maintaining aspect ratio */
-}
-
-.event-card h3 {
-  position: absolute; 
-  bottom: 0.625rem; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  color: #FFFFFF; 
-  font-size: 1.5rem; 
-  text-align: center; 
-  padding: 0.625rem; 
-  border-radius: 1.25rem; 
-}
-
 
 /* ----- Footer ----- */
 footer {
@@ -301,6 +153,7 @@ footer h2 {
 }
 
 #forside-email {
+  font-family: "Montserrat", sans-serif;
   padding: 0.625rem;
   background-color: var(--sekundaer-groen);
   border: none;
@@ -309,6 +162,7 @@ footer h2 {
 }
 
 .nb-knap {
+  font-family: "Montserrat", sans-serif;
   padding: 0.625rem 1.25rem;
   background-color: var(--primaer-groen); 
   color: var(--primaer-hvid); 
@@ -347,15 +201,346 @@ footer h2 {
   text-decoration: underline;
 }
 
+/* -------- FORSIDE -------- */
+  /* - Velkommen sektionen - */
+  #london-welcome-section {
+    text-align: center;
+    padding: 15rem 0;
+    background-image: url('Images/cocktail-cover.webp'); 
+    background-size: cover;
+    color: var(--primaer-hvid);
+  }
+  
+  #london-welcome-title {
+    font-size: 3rem;
+  }
+  
+  /* - Knapper i velkommen sektionen med animationshover- */
+  .london-buttons {
+    margin: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .london-button-item {
+    background-color: var(--primaer-groen);
+    font-family: "Sofia Sans Condensed", sans-serif;
+    border: none;
+    padding: 1.125rem 2.1rem;
+    border-radius: 1.25rem;
+    color: var(--guld);
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .london-button-item::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: -1.875rem;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+    opacity: 0;
+  }
+  
+  .london-button-item:hover::before {
+    right: 0.625rem;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.5);
+    transition: all 0.3s ease;
+  }
+  
+  /* Specifik ikon for hver knap */
+  .london-button-item[data-icon="cocktail"]::before {
+    background-image: url('images/cocktail-ami.webp');
+  }
+  
+  .london-button-item[data-icon="bottle"]::before {
+    background-image: url('images/vodka-ami.webp');
+  }
+  
+  .london-button-item[data-icon="package"]::before {
+    background-image: url('images/bordpakke-ami.webp');
+  }
+  
+  .london-button-item:hover a {
+    transform: translateX(-0.5rem);
+    display: inline-block;
+  }
+  
+  .london-button-item a {
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--guld);
+  }
+  /* - Om London Bar - */
+  .london-about {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    background-color: var(--primaer-groen);
+    color: var(--primaer-hvid);
+    max-width: 80rem;
+    margin: auto;
+  }
+
+  .london-about-title {
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .london-about-description {
+    color: var(--primaer-hvid);
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+
+/* -------- BORDPAKKER -------- */
+  .bordpakker {
+    padding: 2.5rem;
+    max-width: 87.5rem;
+    margin: 0 auto;
+  }
+
+  .bordpakker-content {
+    display: flex;
+    gap: 4rem;
+    background-color: var(--sekundaer-groen);
+    border-radius: 1.5rem;
+    padding: 2rem;
+  }
+
+  .bordpakker-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--primaer-hvid);
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .bordpakker-text h1 {
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+  }
+
+  .bordpakke-knap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .bp-knap {
+    background-color: var(--primaer-groen);
+    color: var(--guld);
+    border: none; 
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .bp-knap a {
+    text-decoration: none;
+    color: var(--guld);
+  }
+
+ /* - Bordpakke slideshow - */
+  .drink-card {
+    flex: 1;
+  }
+
+  .slideshow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .drink-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .drink-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+ /* - Navigationspillene - */
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    color: var(--primaer-hvid);
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: 0.6s ease;
+    margin: auto;
+  }
+
+  .next {
+    right: auto;
+  }
+
+  .drink-info {
+    color: var(--primaer-hvid);
+    margin-top: 0.5rem;
+  }
+
+  .drink-info ul {
+    padding-left: 3rem;
+  }
+
+  #drink-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+  }
+  #price {
+    font-size: 1.3rem;
+    font-weight: semi-bold;
+    margin: 0.3rem 0;
+  }
+  #quantity {
+    margin: 0.3rem 0;
+  }
+  #options {
+    margin: 0.3rem 0;
+  }
+  #pitcher {
+    margin: 0.3rem 0;
+  }
+  #spiritus {
+    margin: 0.3rem 0;
+  }
+  #mixer {
+    margin: 0.3rem 0;
+  }
+  #pureshots {
+    margin: 0.3rem 0;
+  }
+
+ /* - Bordpakkerne oversigt Section - */
+  .bordpakkerne {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 2rem;
+    padding: 0 2.5rem;
+    max-width: 87.5rem;
+    margin: 0 auto;
+  }
+
+  .bordpakke {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .bordpakke img {
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+
+  .bp-knappen {
+    background-color: var(--sekundaer-groen);
+    color: var(--guld);
+    border: none; 
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    margin: auto;
+  }
+
+/* -------- SORTIMENT -------- */
+  .sortiment-page {
+    padding: 2rem;
+    max-width: 87.5rem;
+    margin: 0 auto;
+  }
+
+  .sortiment-page h1 {
+    text-align: center;
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+  }
+
+  .sortiment-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .sortiment-item {
+    position: relative;
+    width: 27.3rem;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .sortiment-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+
+  .sortiment-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+  }
+
+  /* - Hover effekt - */
+  .sortiment-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
 /* ----- Arrangementer ----- */
-#arrangementer-overskrift {
-  font-weight: 700;
-  color: var(--guld);
-  font-size: 2.7rem;
-  text-align: center;
+  #arrangementer-overskrift {
+    text-align: center;
+    color: var(--guld);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-/* ----- Fredagsbar ----- */
+  /* ----- Fredagsbar ----- */
 .fredagsbar-section {
     padding: 2.5rem;
     max-width: 87.5rem;
@@ -479,8 +664,9 @@ footer h2 {
 }
 
 .carousel-slide {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .carousel-slide.active {
@@ -583,34 +769,6 @@ footer h2 {
     background-color: var(--guld);
 }
 
-/* Responsive styling */
-@media (min-width: 768px) {
-    .menu-card {
-        min-height: 350px;
-    }
-    
-    .carousel-btn {
-        padding: 1.5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .carousel-container {
-        display: flex;
-        overflow: visible;
-    }
-    
-    .carousel-slide {
-        display: block;
-        flex: 1;
-        margin: 0 1rem;
-    }
-    
-    .carousel-btn, .carousel-dots {
-        display: none;
-    }
-}
-
 /* Modal styles */
 .modal {
     display: none;
@@ -681,8 +839,6 @@ footer h2 {
     background: var(--guld);
     border-radius: 4px;
 }
-
-
 
 /* ----- Cocktail kursus ----- */
 /* Cocktail Section */
@@ -768,174 +924,6 @@ footer h2 {
   border-radius: 1.5rem;
 }
 
-/* ----- Bordpakker ----- */
-.bordpakker {
-  padding: 2.5rem;
-  max-width: 87.5rem;
-  margin: 0 auto;
-}
-
-.bordpakker-content {
-  display: flex;
-  gap: 4rem;
-  background-color: var(--sekundaer-groen);
-  border-radius: 1.5rem;
-  padding: 2rem;
-}
-
-.bordpakker-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  color: var(--primaer-hvid);
-  gap: 2rem;
-  font-size: 1.2rem;
-}
-
-.bordpakker-text h1 {
-  color: var(--guld);
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-.bordpakke-knap {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin: 0.5rem 0;
-}
-
-.bp-knap {
-  background-color: var(--primaer-groen);
-  color: var(--guld);
-  border: none; 
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
-}
-
-.bp-knap a {
-  text-decoration: none;
-  color: var(--guld);
-}
-
-/* bordpakke slideshow */
-.drink-card {
-  flex: 1;
-}
-
-.slideshow {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-
-.drink-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.drink-image img {
-  width: 90%;
-  height: auto;
-  border-radius: 1.5rem;
-}
-
-/* Navigationspillene */
-.prev, .next {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  color: var(--primaer-hvid);
-  font-weight: bold;
-  font-size: 2.5rem;
-  transition: 0.6s ease;
-  margin: auto;
-}
-
-.next {
-  right: auto;
-}
-
-.drink-info {
-  color: var(--primaer-hvid);
-  margin-top: 0.5rem;
-}
-
-.drink-info ul {
-  padding-left: 3rem;
-}
-
-#drink-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0.3rem 0;
-}
-#price {
-  font-size: 1.3rem;
-  font-weight: semi-bold;
-  margin: 0.3rem 0;
-}
-#quantity {
-  margin: 0.3rem 0;
-}
-#options {
-  margin: 0.3rem 0;
-}
-#pitcher {
-  margin: 0.3rem 0;
-}
-#spiritus {
-  margin: 0.3rem 0;
-}
-#mixer {
-  margin: 0.3rem 0;
-}
-#pureshots {
-  margin: 0.3rem 0;
-}
-
-/* Bordpakkerne oversigt Section */
-.bordpakkerne {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
-  gap: 2rem;
-  padding: 0 2.5rem;
-  max-width: 87.5rem;
-  margin: 0 auto;
-}
-
-.bordpakke {
-  padding: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.bordpakke img {
-  border-radius: 1.5rem;
-  cursor: pointer;
-}
-
-.bp-knappen {
-  background-color: var(--sekundaer-groen);
-  color: var(--guld);
-  border: none; 
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
-  margin: auto;
-}
 
 
 /* ----- Barkort ----- */
@@ -1041,103 +1029,369 @@ footer h2 {
 }
 
 
-/* ----- Sortiment ----- */
-
-.sortiment-page {
-    padding: 2rem;
-    max-width: 87.5rem;
-    margin: 0 auto;
-}
-
-.sortiment-page h1 {
-    text-align: center;
-    color: var(--guld);
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-.sortiment-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
-}
-
-.sortiment-item {
-    position: relative;
-    width: 27.3rem;
-    height: 25rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    text-decoration: none;
-}
-
-.sortiment-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-}
-
-.sortiment-item span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-/* Hover effekt */
-.sortiment-item:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
 
 /* ---------------------------- Responsivt --------------------------------- */
 
 
 
-/* ----- Forside ----- */
+/* ----- Lille Laptop ----- */
+@media (max-width: 1024px) { 
+  /* header */
+  .navbar {
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
+  .header-knap {
+    font-size: 0.7rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.7rem;
+  }
 
+  /* footer */
+  footer h2 {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  .social-icons img {
+    width: 1.4rem;
+  }
+  #forside-email, .nb-knap {
+    padding: 0.4rem;
+  }
 
+  #footer-bottom {
+    font-size: 0.8rem;
+  }
+  #footer-bottom a {
+    padding: 0 0.8rem;
+  }
 
+  /* ----- FORSIDE ----- */
+  /* velkommen sektionen */
+  #london-welcome-title {
+    font-size: 2.5rem;
+  }
+  .london-button-item {
+    font-size: 1rem;
+    padding: 1rem 1.7rem;
+  }
+  /* om london bar */
+  .london-about {
+    max-width: 50rem;
+  }
+  
+  /* SORTIMENT / ARRANGEMENTER */
+  .sortiment-grid {
+    gap: 1.5rem;
+  }
+  .sortiment-item {
+      width: 19rem;
+      height: 19rem;
+  }
 
-/* ----- Arrangementer ----- */
+  /* BARKORT */
+  .barkort-billed img {
+    max-width: 20rem;
+  }
+  .bordpakkerne {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10.625rem, 1fr));
+  }
 
+  /* FLASKEKORT */
+  .flaskekort-billed img {
+      width: 20rem;
+  }
+  /* BORDPAKKER */
+  .bordpakker-text h1 {
+    font-size: 3rem;
+  }
+  .bordpakker-text {
+    gap: 0.5rem;
+  }
 
+  /* FREDAGSBAR */
 
+  /* COCKTAIL KURSUS */
 
-/* ----- Fredagsbar ----- */
+}
+/* ----- Tablet ----- */
 @media (max-width: 768px) {
-    .fredagsbar-content {
-        flex-direction: column;
-    }
+  /* header */
+  /* footer */
+  #footer-bottom {
+    font-size: 0.8rem;
+  }
+  #footer-bottom a {
+    padding: 0 0.3rem;
+  }
 
-    .fredagsbar-text h1 {
-        font-size: 2rem;
-    }
+  /* FORSIDE */
+  .london-button-item {
+    font-size: 1rem;
+    padding: 1rem 1.7rem;
+    margin: 0 0.3rem;
+  }
+  .london-button-item:hover::before {
+    right: 0.2rem;
+    transform: translateY(-50%) scale(1.2);
+  }
+  .london-about {
+    max-width: 35rem;
+  }
+
+  /* SORTIMENT / ARRANGEMENTER*/
+  .sortiment-page {
+    padding: 0;
+  }
+  .sortiment-grid {
+    padding: 0 2.3rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sortiment-item {
+    max-width: 14.8rem;
+    max-height: 14.8rem;
+  }
+  /* BARKORT */
+  #barkort-overskrift {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .barkort-billed {
+    padding: 0 1rem 1rem 1rem;
+    gap: 2rem;
+  }
+  .barkort-billed img {
+    max-width: 15rem;
+  }
+  /* FLASKEKORT */
+  #flaskekort-overskrift {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .flaskekort-billed {
+    padding: 0 1rem 1rem 1rem;
+    gap: 2rem;
+  }
+  .flaskekort-billed img {
+    max-width: 15rem;
+  }
+
+  /* BORDPAKKER */
+  .bordpakker-content {
+    flex-direction: column;
+  }
+  .bordpakker-text h1 {
+    font-size: 2.5rem;
+  }
+  .bordpakker-text p{
+    margin: 0.3rem 0;
+  }
+  .bp-knap {
+    font-size: 0.9rem;
+  }
+  .prev, .next {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  .drink-image img {
+    width: 28rem;
+  }
+  .bordpakkerne {
+    display: none;
+  }
+
+  /* FREDAGSBAR */
+  .fredagsbar-content {
+    flex-direction: column;
+  }
+  .fredagsbar-text h1 {
+      font-size: 2rem;
+  }
+
+  /* COCKTAIL KURSUS */
+
+  /* PRIVATE ARRANGEMENTER */
+  .private-content {
+    flex-direction: column;
+  }
+  .menu-cards {
+      grid-template-columns: 1fr;
+  }
+  .private-text h1 {
+      font-size: 2rem;
+  }
+  .modal-content {
+      margin: 20% auto;
+      width: 90%;
+  }
+  
+  /* GLEMTE SAGER */
+  .glemtesager {
+    padding: 1rem;
+    height: auto;
+    align-items: flex-start;
+  }
+  .lost-items-section {
+      padding: 1rem;
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+  }
+  .lost-items-section h1 {
+    font-size: 1.5rem; /* Mindre font størrelse på mobil */
+  }
+  .lost-items-section p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+  }
+  .lost-items-form {
+      gap: 0.8rem;
+  }
+  .lost-items-form input {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+  }
+  .lost-items-form button {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+  }
+}
+/* Mobile */
+@media (max-width: 425px) {
+  /* header */
+  .navbar {
+    display: none;
+  }
+  /* footer */
+  .primaer-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7rem;
+  }
+  footer h2 {
+    font-size: 1.3rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .social-icons img {
+    width: 1.4rem;
+  }
+  #forside-email, .nb-knap {
+    padding: 0.4rem;
+  }
+  #footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  #footer-bottom p {
+    margin: 0.3rem 0;
+  }
+  #footer-bottom a {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+  #footer-bottom-a {
+    margin: 0.3rem 0;
+  }
+
+  /* FORSIDE */
+  #london-welcome-section{
+    padding: 10rem 0;
+  }
+  #london-welcome-title {
+    margin: 0 3rem;
+  }
+  .london-buttons {
+    margin: 0.5rem 2rem;
+    gap: 0.5rem;
+  }
+  .london-button-item {
+    font-size: 1rem;
+    padding: 1rem 1.7rem;
+    margin: 0 0.3rem;
+  }
+  .london-button-item:hover::before {
+    right: 0.2rem;
+    transform: translateY(-50%) scale(1.2);
+  }
+  .london-about {
+    max-width: 20rem;
+  }
+
+  /* SORTIMENT / ARRANGEMENTER */
+  .sortiment-page {
+    padding: 0;
+  }
+  .sortiment-grid {
+    padding: 0 2.3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sortiment-item {
+    max-width: 20rem;
+    max-height: 14.8rem;
+  }
+
+  /* BORDPAKKER */
+  .bordpakker-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bordpakker-text h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .bp-knap {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+  }
+  .next {
+    padding-right: 0;
+    font-size: 2rem;
+  }
+  .prev {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .drink-image img {
+    width: 14.7rem;
+  }
+  
+  /* COCKTAIL KURSUS */
+  .cocktail-content {
+    flex-direction: column;
+  }
+  .course-types {
+    margin: 0 2rem;
+    padding: 1.5rem;
+  }
+  /* BARKORT */
+  #barkort-overskrift {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+
+  /* FLASKEKORT */
+  #flaskekort-overskrift {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+
+  .flaskekort-billed {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
 }
 
-
-/* Opdater carousel-slide styling */
-.carousel-slide {
-  display: none;
-  width: 100%;
-  transition: transform 0.5s ease;
-}
-
-.carousel-slide.active {
-  display: block;
-}
-
-/* Tilføj denne media query */
+/* ekstra til private arrangementer og fredagsbar */
 @media (max-width: 1023px) {
   .carousel-container {
       position: relative;
@@ -1157,7 +1411,7 @@ footer h2 {
       position: relative;
   }
 }
-
+/* ekstra til private arrangementer og fredagsbar */
 @media (min-width: 1024px) {
   .carousel-container {
       display: flex;
@@ -1169,184 +1423,19 @@ footer h2 {
       display: block;
       flex: 1;
       opacity: 1;
+      margin: 0 1rem;
   }
   
   .carousel-btn, .carousel-dots {
       display: none;
   }
 }
-
-
-/* ----- Privat Arrangementer ----- */
-@media (max-width: 768px) {
-    .private-content {
-        flex-direction: column;
-    }
-
-    .menu-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .private-text h1 {
-        font-size: 2rem;
-    }
-
-    .modal-content {
-        margin: 20% auto;
-        width: 90%;
-    }
-}
-
-
-
-/* ----- Cocktail kursus ----- */
-/* Mobile str. L */
-@media (max-width: 425px) {
-  .cocktail-content {
-    flex-direction: column;
+/* ekstra til private arrangementer og fredagsbar */
+@media (min-width: 768px) {
+  .menu-card {
+      min-height: 350px;
   }
-  .course-types {
-    margin: 0 2rem;
-    padding: 1.5rem;
+  .carousel-btn {
+      padding: 1.5rem;
   }
-}
-
-
-
-/* ----- Bordpakker ----- */
-/* Tablet */
-@media (max-width: 768px) {
-  .cta-knap {
-    font-size: 0.9rem;
-  }
-
-  .prev, .next {
-    font-size: 2rem;
-    padding: 0 0.5rem;
-  }
-  
-  .drink-image img {
-    width: 100%;
-  }
-}
-
-/* Mobile str. L */
-@media (max-width: 425px){
-  .bordpakker-content {
-    flex-direction: column;
-  }
-
-  .next {
-    padding-right: 0;
-    font-size: 2rem;
-  }
-
-  .prev {
-    padding-left: 0;
-    font-size: 2rem;
-  }
-}
-
-
-/* ----- Barkort ----- */
-
-
-
-
-/* ----- Flaskekort ----- */
-@media screen and (max-width: 768px) {
-    #flaskekort-overskrift {
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-
-    .flaskekort-billed {
-        padding: 0 1rem 1rem 1rem;
-        gap: 1rem;
-    }
-
-    .flaskekort-billed img {
-        width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
-        max-width: 90%; /* så man kan se det hele på sin skærm med 10% kant*/
-        margin-bottom: 1rem;
-    }
-}
-
-/* Ekstra små skærme */
-@media screen and (max-width: 480px) {
-    #flaskekort-overskrift {
-        font-size: 1.8rem;
-        margin: 1rem 0;
-    }
-
-    .flaskekort-billed {
-        padding: 0 0.5rem 0.5rem 0.5rem;
-    }
-}
-
-
-
-/* ----- Glemtesager ----- */
-
-@media screen and (max-width: 768px) {
-    .glemtesager {
-        padding: 1rem;
-        height: auto;
-        align-items: flex-start;
-    }
-
-    .lost-items-section {
-        padding: 1rem;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .lost-items-section h1 {
-        font-size: 1.5rem; /* Mindre font størrelse på mobil */
-    }
-
-    .lost-items-section p {
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .lost-items-form {
-        gap: 0.8rem;
-    }
-
-    .lost-items-form input {
-        padding: 0.7rem;
-        font-size: 0.9rem;
-    }
-
-    .lost-items-form button {
-        padding: 0.8rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* ----- Sortiment ----- */
-
-@media (max-width: 1024px) {
-    .sortiment-grid {
-        gap: 1.5rem;
-    }
-    
-    .sortiment-item {
-        width: 19rem;
-        height: 18rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .sortiment-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .sortiment-item {
-        width: 100%;
-        max-width: auto;
-    }
 }
