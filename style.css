@@ -27,6 +27,16 @@ header {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Tilføj smooth transition */
+  transition: background-color 0.3s ease;
+}
+
+/* Tilføj en skygge effekt når man scroller */
+header.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 #logo img{
@@ -110,15 +120,19 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 /* --- Burgermenu --- */
+/* Burger menu styles */
 .burgermenu-container {
- display: none;
+  display: none;
+  cursor: pointer;
 }
 
 .burgermenu {
   width: 2.1rem;
   height: 0.3rem;
   background-color: var(--primaer-groen);
-  margin: 0.375rem 0;
+  margin: 0.3rem 0;
+  transition: 0.3s;
+  border-radius: 3rem;
 }
 
 /* ----- Footer ----- */
@@ -1238,6 +1252,55 @@ footer h2 {
 /* ----- Tablet ----- */
 @media (max-width: 768px) {
   /* header */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primaer-sort);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    transition: 0.3s;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .burgermenu-container {
+    display: block;
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+
+  /* Transform burger menu to X when active */
+  .burgermenu-container.active .burgermenu:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .burgermenu-container.active .burgermenu:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burgermenu-container.active .burgermenu:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -6px);
+  }
+
+  /* Adjust dropdown positioning */
+  .dropdown-content {
+    position: relative;
+    width: 100%;
+    background-color: var(--sekundaer-groen);
+  }
+
+  .header-knap {
+    margin: 1rem auto;
+  }
+
   /* footer */
   #footer-bottom {
     font-size: 0.8rem;
