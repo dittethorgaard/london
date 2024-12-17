@@ -406,6 +406,26 @@ footer h2 {
     margin-top: 0.5rem;
   }
 
+  /* - Prikker / cirkler) - */
+  .prikker {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .prik {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: var(--primaer-groen);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .prik.active {
+    background-color: var(--guld);
+  }
+
+  /* - Bordpakke indformationer - */
   .drink-info ul {
     padding-left: 3rem;
   }
@@ -607,7 +627,7 @@ footer h2 {
     display: flex;
     gap: 2rem;
     background-color: var(--sekundaer-groen);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     padding: 2rem;
 }
 
@@ -641,9 +661,10 @@ footer h2 {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
     transition: background-color 0.3s;
+    font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 .book-button:hover {
@@ -850,26 +871,14 @@ footer h2 {
 
 .cocktail-content {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   background-color: var(--sekundaer-groen);
   border-radius: 1.5rem;
   padding: 2rem;
 }
 
-.cocktail-image {
-  flex: 1;
-}
-.cocktail-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.5rem;
-}
-
 .cocktail-text {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   color: var(--primaer-hvid);
 }
 
@@ -877,30 +886,17 @@ footer h2 {
   color: var(--guld);
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-.cocktail-text h2 {
-  font-size: 1.2rem;
+.cocktail-image {
+  flex: 1;
 }
-
-.cta-knap {
-  background-color: var(--primaer-groen);
-  color: var(--guld);
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: background-color 0.3s;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-}
-
-.cta-knap a {
-  text-decoration: none;
-  color: var(--guld);
+.cocktail-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-top: 2rem;
 }
 
 /* Course Types Section */
@@ -913,19 +909,136 @@ footer h2 {
   margin: 0 auto;
 }
 
-.course-card {
-  padding: 0.3rem;
+.course-card-text {
+  background-image: url('images/background2.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 1rem;
+  color: var(--primaer-hvid);
+  position: relative;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+}
+.course-card-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
 }
 
-.course-card img {
-  border-radius: 1.5rem;
+.course-card-text h2, 
+.course-card-text p, 
+.menu-card button {
+    position: relative;
+    z-index: 1;
+  }
+
+.course-card-text h2 {
+  color: var(--guld);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
+.course-card-text li {
+  color: var(--primaer-hvid);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding-left: 1.5rem;
+}
 
+.course-card-text li::before {
+  content: "•";
+  color: var(--guld);
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.2rem;
+}
 
+.course-card-text p {
+  color: var(--primaer-hvid);
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tilvalg {
+  padding-left: 1.1rem;
+}
+
+.course-carousel {
+  position: relative;
+  max-width: 87.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.course-types-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.course-card {
+    display: none;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.course-card.active {
+    display: block;
+}
+
+.carousel-knap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--guld);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prev-knap {
+    left: 1rem;
+}
+
+.next-knap {
+    right: 0.5rem;
+}
+
+.carousel-cirkler {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cirkel {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: var(--sekundaer-groen);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cirkel.active {
+  background-color: var(--guld);
+}
 /* ----- Barkort ----- */
 #barkort-overskrift {
     font-weight: 700;
@@ -970,7 +1083,6 @@ footer h2 {
     height: auto;
     border-radius: 1.5rem; /* Afrundet hjørner */
 }
-
 
 
 /* ----- Glemtesager ----- */
@@ -1115,7 +1227,13 @@ footer h2 {
   /* FREDAGSBAR */
 
   /* COCKTAIL KURSUS */
-
+  .course-types {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10.625rem, 1fr));
+  }
+  .course-card-text h2 {
+    font-size: 2rem;
+  }
 }
 /* ----- Tablet ----- */
 @media (max-width: 768px) {
@@ -1213,20 +1331,48 @@ footer h2 {
   }
 
   /* COCKTAIL KURSUS */
+  .cocktail-content {
+    flex-direction: column;
+    gap: 0;
+  }
+  .cocktail-text h1 {
+    font-size: 2rem;
+  }
+  .course-card-text {
+    grid-template-columns: 1fr;
+  }
+  .course-types {
+    display: block; 
+  }
+  .course-card {
+      display: none;
+      width: 100%; 
+  }
+  .course-card.active {
+      display: block; 
+  }
+  .carousel-knap {
+      display: block;
+  }
+  .carousel-cirkler {
+      display: block;
+      margin-top: 0.5rem;
+  }
 
   /* PRIVATE ARRANGEMENTER */
   .private-content {
     flex-direction: column;
+    gap: 0;
   }
   .menu-cards {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .private-text h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .modal-content {
-      margin: 20% auto;
-      width: 90%;
+    margin: 20% auto;
+    width: 90%;
   }
   
   /* GLEMTE SAGER */
@@ -1263,9 +1409,7 @@ footer h2 {
 /* Mobile */
 @media (max-width: 425px) {
   /* header */
-  .navbar {
-    display: none;
-  }
+  
   /* footer */
   .primaer-footer {
     flex-direction: column;
@@ -1430,12 +1574,19 @@ footer h2 {
       display: none;
   }
 }
-/* ekstra til private arrangementer og fredagsbar */
+/* ekstra til private arrangementer og fredagsbar og cocktail kursus */
 @media (min-width: 768px) {
   .menu-card {
       min-height: 350px;
   }
   .carousel-btn {
       padding: 1.5rem;
+  }
+  .carousel-knap,
+  .carousel-cirkler {
+      display: none;
+  }
+  .course-card {
+    display: block;
   }
 }

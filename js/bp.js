@@ -80,6 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
         spiritus.textContent = currentPakke.spiritus;
         mixer.textContent = currentPakke.mixer;
         pureshots.textContent = currentPakke.pureshots;
+        
+        // Update dots
+        const dots = document.querySelectorAll('.prik');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index + 1 === slideNumber);
+        });
     }
     
     window.plusSlides = function(n) {
@@ -101,6 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Tilføj klikbehandling for knap
         btn.addEventListener('click', () => {
+            currentSlide = index + 1;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Tilføj klikbehandling for prikker
+    const dots = document.querySelectorAll('.prik');
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
             currentSlide = index + 1;
             showSlide(currentSlide);
         });
