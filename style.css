@@ -219,7 +219,7 @@ footer h2 {
   #london-welcome-section {
     text-align: center;
     padding: 15rem 0;
-    background-image: url('Images/cocktail-cover.webp'); 
+    background-image: url('images/cocktail-cover.webp'); 
     background-size: cover;
     color: var(--primaer-hvid);
   }
@@ -708,7 +708,7 @@ footer h2 {
 }
 
 .menu-card {
-    background-image: url('images/background2.webp');
+    background-image: url('images/background.webp');
     background-size: cover;
     background-position: center;
     padding: 2rem;
