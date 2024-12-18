@@ -450,7 +450,7 @@ footer h2 {
   }
   #price {
     font-size: 1.3rem;
-    font-weight: semi-bold;
+    font-weight: 600;
     margin: 0.3rem 0;
   }
   #quantity {
@@ -1336,7 +1336,7 @@ footer h2 {
   }
   .sortiment-item {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
   }
   /* BARKORT */
   #barkort-overskrift {
@@ -1547,7 +1547,7 @@ footer h2 {
   }
   .sortiment-item {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
   }
 
   /* BORDPAKKER */
