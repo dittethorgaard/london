@@ -1225,10 +1225,7 @@ footer h2 {
     grid-template-columns: repeat(auto-fit, minmax(10.625rem, 1fr));
   }
 
-  /* FLASKEKORT */
-  .flaskekort-billed img {
-      width: 20rem;
-  }
+
   /* BORDPAKKER */
   .bordpakker-text h1 {
     font-size: 3rem;
@@ -1237,7 +1234,6 @@ footer h2 {
     gap: 0.5rem;
   }
 
-  /* FREDAGSBAR */
 
   /* COCKTAIL KURSUS */
   .course-types {
@@ -1357,7 +1353,7 @@ footer h2 {
     gap: 2rem;
   }
   .flaskekort-billed img {
-    max-width: 15rem;
+    max-width: 20rem;
   }
 
   /* BORDPAKKER */
