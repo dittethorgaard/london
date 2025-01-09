@@ -917,9 +917,9 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 2rem 0;
   max-width: 87.5rem;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .course-card-text {
@@ -934,6 +934,7 @@ footer h2 {
   display: flex;
   flex-direction: column;
 }
+
 .course-card-text::before {
   content: '';
   position: absolute;
@@ -955,7 +956,7 @@ footer h2 {
 .course-card-text h2 {
   color: var(--guld);
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -967,21 +968,21 @@ footer h2 {
   position: relative;
   z-index: 1;
   text-align: left;
-  padding-left: 1.5rem;
 }
 
 .course-card-text li::before {
   content: "•";
   color: var(--guld);
   position: absolute;
-  left: 0.5rem;
+  left: -1rem;
   font-size: 1.2rem;
 }
 
 .course-card-text p {
   color: var(--primaer-hvid);
   font-size: 1.1rem;
-  margin: 1rem 0;
+  padding-left: 1.5rem;
+  margin: 0;
   position: relative;
   z-index: 1;
 }
@@ -990,11 +991,15 @@ footer h2 {
   padding-left: 1.1rem;
 }
 
+.tilvalg p {
+  padding-left: 0;
+}
+
 .course-carousel {
   position: relative;
   max-width: 87.5rem;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: auto;
+  /* padding: 0 1rem; */
 }
 
 .course-types-container {
@@ -1027,11 +1032,11 @@ footer h2 {
 }
 
 .prev-knap {
-    left: 1rem;
+    left: 0.3rem;
 }
 
 .next-knap {
-    right: 0.5rem;
+    right: 0.3rem;
 }
 
 .carousel-cirkler {
@@ -1400,6 +1405,13 @@ footer h2 {
     flex-direction: column;
     gap: 0;
   }
+  .cocktail-image img {
+    margin: 0;
+  }
+  .course-types {
+    margin: auto;
+    padding: 0 1rem;
+  }
   .cocktail-text h1 {
     font-size: 2rem;
   }
@@ -1410,18 +1422,18 @@ footer h2 {
     display: block; 
   }
   .course-card {
-      display: none;
-      width: 100%; 
+    display: none;
+    width: 100%; 
   }
   .course-card.active {
-      display: block; 
+    display: block; 
   }
   .carousel-knap {
-      display: block;
+    display: block;
   }
   .carousel-cirkler {
-      display: block;
-      margin-top: 0.5rem;
+    display: block;
+    margin-top: 0.5rem;
   }
 
   /* PRIVATE ARRANGEMENTER */
@@ -1599,10 +1611,24 @@ footer h2 {
   .cocktail-content {
     flex-direction: column;
   }
-  .course-types {
-    margin: 0 2rem;
-    padding: 1.5rem;
+  .cocktail-image img {
+    margin: 0;
   }
+  .course-types {
+    margin: auto;
+    padding: 0 1rem;
+  }
+  .course-card-text {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .course-card-text li {
+    left: -1rem;
+    font-size: 1rem;
+  }
+  .course-card-text li::before {
+    left: -1rem;
+  }
+
   /* BARKORT */
   #barkort-overskrift {
     font-size: 1.8rem;
