@@ -689,7 +689,7 @@ footer h2 {
     position: relative;
     max-width: 87.5rem;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .carousel-container {
@@ -767,21 +767,21 @@ footer h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     color: var(--guld);
     border: none;
     padding: 1rem;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .prev-btn {
-    left: 1rem;
+    left: 2rem;
 }
 
 .next-btn {
-    right: 1rem;
+    right: 2rem;
 }
 
 .carousel-dots {
@@ -923,7 +923,7 @@ footer h2 {
 }
 
 .course-card-text {
-  background-image: url('images/background2.webp');
+  background-image: url('images/background.webp');
   background-size: cover;
   background-position: center;
   padding: 0 2rem 2rem 2rem;
@@ -936,13 +936,11 @@ footer h2 {
 }
 
 .course-card-text::before {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
 
@@ -974,7 +972,7 @@ footer h2 {
   content: "•";
   color: var(--guld);
   position: absolute;
-  left: -1rem;
+  left: 0;
   font-size: 1.2rem;
 }
 
@@ -999,44 +997,43 @@ footer h2 {
   position: relative;
   max-width: 87.5rem;
   margin: auto;
-  /* padding: 0 1rem; */
 }
 
 .course-types-container {
-    position: relative;
-    overflow: hidden;
-    padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
 .course-card {
-    display: none;
-    width: 100%;
-    transition: transform 0.5s ease;
+  display: none;
+  width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .course-card.active {
-    display: block;
+  display: block;
 }
 
 .carousel-knap {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: var(--guld);
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--guld);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .prev-knap {
-    left: 0.3rem;
+  left: 3rem;
 }
 
 .next-knap {
-    right: 0.3rem;
+  right: 3rem;
 }
 
 .carousel-cirkler {
@@ -1265,11 +1262,9 @@ footer h2 {
     transition: 0.3s;
     font-size: 1.5rem;
   }
-
   .navbar.active {
     right: 0;
   }
-
   .burgermenu-container {
     display: block;
     position: fixed;
@@ -1277,33 +1272,26 @@ footer h2 {
     right: 2rem;
     z-index: 1000;
   }
-
   .burgermenu-container.active .burgermenu:nth-child(1) {
     transform: rotate(-45deg) translate(-8px, 6px);
   }
-
   .burgermenu-container.active .burgermenu:nth-child(2) {
     opacity: 0;
   }
-
   .burgermenu-container.active .burgermenu:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -6px);
   }
-
   .dropdown {
     text-align: center;
   }
-  
   .dropdown-content {
     position: relative;
     width: 100%;
     background-color: var(--sekundaer-groen);
   }
-
   .dropdown-content a {
     text-align: center;
   }
-
   .header-knap {
     margin: 1rem auto;
   }
@@ -1355,6 +1343,7 @@ footer h2 {
   .barkort-billed img {
     max-width: 15rem;
   }
+
   /* FLASKEKORT */
   #flaskekort-overskrift {
     font-size: 2rem;
@@ -1418,6 +1407,16 @@ footer h2 {
   .course-card-text {
     grid-template-columns: 1fr;
   }
+  .course-card-text ul {
+    padding-left: 1.2rem;
+  }
+  .course-card-text li {
+    padding-left: 1rem;
+  }
+  .tilvalg p {
+    padding-left: 1rem;
+    font-weight: bold;
+  }
   .course-types {
     display: block; 
   }
@@ -1438,14 +1437,21 @@ footer h2 {
 
   /* PRIVATE ARRANGEMENTER */
   .private-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 0;
   }
-  .menu-cards {
-    grid-template-columns: 1fr;
+  .private-image img {
+    margin-top: 0;
+    order: 1;
   }
   .private-text h1 {
     font-size: 2rem;
+  }
+  .private-text p, strong {
+    padding: 0;
+  }
+  .menu-cards {
+    grid-template-columns: 1fr;
   }
   .modal-content {
     margin: 20% auto;
@@ -1622,11 +1628,7 @@ footer h2 {
     padding: 0 1rem 1rem 1rem;
   }
   .course-card-text li {
-    left: -1rem;
     font-size: 1rem;
-  }
-  .course-card-text li::before {
-    left: -1rem;
   }
 
   /* BARKORT */
